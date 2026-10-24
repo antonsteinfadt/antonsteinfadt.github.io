@@ -1,15 +1,14 @@
-# Meine Homepage – Version mit Lorem ipsum
+# Anton Steinfadt — Homepage
 
-Die Homepage bleibt bewusst einfach: weißer Hintergrund, Times, blaue Links und wenig CSS. Der Name oben lautet Anton Steinfadt; „Notizen usw.“ heißt jetzt „Adversaria“.
+Eine schlichte persönliche Website mit weißem Hintergrund, Times-Schrift und blauen Links. Sie enthält die Bereiche Mathematik, Philosophie und Adversaria.
 
-## Neue Beiträge in Adversaria, Mathematik oder Philosophie
+## Einen Beitrag ergänzen
 
-Die Website ist eine statische GitHub-Pages-Seite. Neue Beiträge veröffentlichst du, indem du die passende HTML-Datei im GitHub-Repository bearbeitest. Die Änderungen werden nach dem Speichern automatisch veröffentlicht. Das geht direkt im Browser, nachdem du dich bei GitHub angemeldet hast.
+Die Website ist statisch. Neue Beiträge veröffentlichst du im jeweiligen Bereich über GitHub:
 
-1. Öffne im Repository die Datei `notizen.html`, `mathematik.html` oder `philosophie.html` und klicke auf das Stift-Symbol („Edit this file“).
-2. Suche nach `<!-- Neue Beiträge hier ergänzen; eine Vorlage steht in README.md. -->`.
-3. Füge an dieser Stelle einen Beitrag ein. Kopiere die Vorlage unten und ersetze Titel, Datum und Text. Beim ersten Beitrag entferne zusätzlich den Hinweis „Noch keine eigenen Beiträge.“.
-4. Klicke auf „Commit changes“. GitHub Pages veröffentlicht die Änderung automatisch.
+1. Öffne `notizen.html`, `mathematik.html` oder `philosophie.html` im Repository und wähle „Edit this file“.
+2. Suche nach dem Kommentar `<!-- Neue Beiträge hier ergänzen; eine Vorlage steht in README.md. -->` und füge dort einen Beitrag ein.
+3. Verwende diese Vorlage und ändere Überschrift, Datum und Text:
 
 ```html
 <article>
@@ -20,12 +19,18 @@ Die Website ist eine statische GitHub-Pages-Seite. Neue Beiträge veröffentlich
 </article>
 ```
 
-Die letzte Zeile mit dem PDF-Link kannst du weglassen, wenn es keinen Anhang gibt. Lade PDFs in den Ordner `pdfs` im Repository. Wenn er noch nicht existiert: Über „Add file“ → „Create new file“ den Namen `pdfs/.gitkeep` eingeben und speichern; dadurch wird der Ordner angelegt. Danach kannst du ihn öffnen und deine PDF-Dateien über „Add file“ → „Upload files“ hochladen. Verwende im Beitrag exakt denselben Dateinamen wie beim Upload, zum Beispiel `pdfs/satz-vom-25-10-2026.pdf`. Dateien im öffentlichen Repository sind öffentlich abrufbar; lade dort nur PDFs hoch, die öffentlich sein dürfen.
+Die letzte Zeile ist optional. Entferne beim ersten eigenen Beitrag auch den Hinweis „Neue Beiträge folgen nach und nach.“. Speichere den Eintrag mit „Commit changes“; GitHub Pages aktualisiert die Website automatisch.
 
-## Website lokal ansehen
+## PDF-Dateien anhängen
 
-Öffne `index.html` per Doppelklick im Browser. Zum Ändern kannst du die HTML-Dateien mit einem Texteditor öffnen. `style.css` enthält die Abstände und Schriftregeln.
+Lade PDFs in den Ordner `pdfs` im Repository. Wenn er noch nicht existiert, erstelle über „Add file“ → „Create new file“ die Datei `pdfs/.gitkeep`; damit wird der Ordner angelegt. Öffne anschließend den Ordner und lade dort die PDF-Datei über „Add file“ → „Upload files“ hoch. Verwende im Link exakt denselben Dateinamen, zum Beispiel `pdfs/arbeit.pdf`.
 
-## Veröffentlichung und Rechtliches
+Das Repository ist öffentlich. Beiträge und PDFs sind deshalb für alle zugänglich; lade nur Dateien hoch, die öffentlich sein dürfen.
 
-Die Website ist unter https://antonsteinfadt.github.io/ erreichbar. GitHub Pages veröffentlicht die Dateien aus dem öffentlichen Repository; alle hochgeladenen Inhalte, auch PDFs, sind öffentlich. `impressum.html` enthält weiterhin Blindtext und ist rechtlich nicht veröffentlichungsreif.
+## Lokal ansehen
+
+Öffne `index.html` im Browser. Die Seite funktioniert ohne Installation oder externe Bibliotheken. `style.css` enthält die wenigen Stilregeln.
+
+## Datenschutz
+
+Die Seite ist als private, nicht kommerzielle Homepage gedacht. Es gibt keine Kontaktformulare, Analyse- oder Werbedienste. Hinweise zur Verarbeitung durch den Hosting-Anbieter stehen auf der Seite „Kontakt und Datenschutz“.
