@@ -7,8 +7,8 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="topline">[ www ] &nbsp; /home/anton/ &nbsp; <span class="odd">*</span></div>
-<div class="updated">persönliche Homepage<br>25.10.2026</div>
+<div class="topline">antonsteinfadt.github.io &nbsp; /home/anton/ &nbsp; <span class="odd">*</span></div>
+<div class="updated">persönliche Homepage<br><time id="today" datetime="2026-10-25">25.10.2026</time></div>
 <h1>Anton Steinfadt</h1>
 <div>Notizen zu Mathematik, Philosophie und weiteren Interessen.</div>
 <nav aria-label="Navigation">
@@ -20,12 +20,13 @@
 <p class="small"><b>Hinweis:</b> Diese Website befindet sich im Aufbau.</p>
 <hr>
 
-<div class="float-thing" aria-label="Cayley-Graph der Kleinschen Vierergruppe">
-<pre class="sketch" aria-hidden="true">(0,1)----(1,1)
-  |          |
-  |          |
-(0,0)----(1,0)</pre>
-<div class="small" style="text-align:right; font-style:italic;">(Z/2Z) × (Z/2Z)</div>
+<div class="float-thing" aria-label="Ausschnitt eines Dreiecksgitters">
+<pre class="sketch" aria-hidden="true">      o---o---o
+     / \ / \ /
+    o---o---o---o
+     \ / \ / \ /
+      o---o---o</pre>
+<div class="small" style="text-align:right; font-style:italic;">Dreiecksgitter</div>
 </div>
 
 <p>Dies ist meine persönliche Website. Hier sammle ich kurze Texte, Gedanken und Hinweise auf Arbeiten.</p>
@@ -48,5 +49,16 @@
 <hr>
 <p class="footer"><a href="impressum.html">Kontakt und Datenschutz</a></p>
 </footer>
+<script>
+const today = new Date();
+const dateText = new Intl.DateTimeFormat('de-DE', {
+  day: '2-digit', month: '2-digit', year: 'numeric', timeZone: 'Europe/Berlin'
+}).format(today);
+const dateIso = new Intl.DateTimeFormat('en-CA', {
+  year: 'numeric', month: '2-digit', day: '2-digit', timeZone: 'Europe/Berlin'
+}).format(today);
+document.getElementById('today').textContent = dateText;
+document.getElementById('today').dateTime = dateIso;
+</script>
 </body>
 </html>
