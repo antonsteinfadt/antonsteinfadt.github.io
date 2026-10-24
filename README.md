@@ -8,7 +8,7 @@ Die Website ist eine statische GitHub-Pages-Seite. Neue Beiträge veröffentlich
 
 1. Öffne im Repository die Datei `notizen.html`, `mathematik.html` oder `philosophie.html` und klicke auf das Stift-Symbol („Edit this file“).
 2. Suche nach `<!-- Neue Beiträge hier ergänzen; eine Vorlage steht in README.md. -->`.
-3. Füge an dieser Stelle einen Beitrag ein. Kopiere die Vorlage unten und ersetze Titel, Datum und Text.
+3. Füge an dieser Stelle einen Beitrag ein. Kopiere die Vorlage unten und ersetze Titel, Datum und Text. Beim ersten Beitrag entferne zusätzlich den Hinweis „Noch keine eigenen Beiträge.“.
 4. Klicke auf „Commit changes“. GitHub Pages veröffentlicht die Änderung automatisch.
 
 ```html
@@ -20,7 +20,7 @@ Die Website ist eine statische GitHub-Pages-Seite. Neue Beiträge veröffentlich
 </article>
 ```
 
-Die letzte Zeile mit dem PDF-Link kannst du weglassen, wenn es keinen Anhang gibt. Lege für PDF-Dateien im Repository einen Ordner `pdfs` an, lade die Datei dort hoch und verwende im Link exakt denselben Dateinamen. Beispiel: `pdfs/satz-vom-25-10-2026.pdf`. Dateien im öffentlichen Repository sind öffentlich abrufbar; lade dort nur PDFs hoch, die öffentlich sein dürfen.
+Die letzte Zeile mit dem PDF-Link kannst du weglassen, wenn es keinen Anhang gibt. Lade PDFs in den Ordner `pdfs` im Repository. Wenn er noch nicht existiert: Über „Add file“ → „Create new file“ den Namen `pdfs/.gitkeep` eingeben und speichern; dadurch wird der Ordner angelegt. Danach kannst du ihn öffnen und deine PDF-Dateien über „Add file“ → „Upload files“ hochladen. Verwende im Beitrag exakt denselben Dateinamen wie beim Upload, zum Beispiel `pdfs/satz-vom-25-10-2026.pdf`. Dateien im öffentlichen Repository sind öffentlich abrufbar; lade dort nur PDFs hoch, die öffentlich sein dürfen.
 
 ## Website lokal ansehen
 
