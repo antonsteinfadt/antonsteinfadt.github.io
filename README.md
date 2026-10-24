@@ -1,4 +1,4 @@
-# Anton Steinfadt — Homepage
+# Anton Steinfadt – Homepage
 
 Eine schlichte persönliche Website mit weißem Hintergrund, Times-Schrift und blauen Links. Sie enthält die Bereiche Mathematik, Philosophie und Adversaria.
 
