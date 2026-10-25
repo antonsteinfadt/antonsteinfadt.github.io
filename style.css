@@ -56,5 +56,5 @@ iframe {
   margin: 12px auto;
 }
 
-.video-frame { max-width: 960px; }
-.slides-frame { max-width: 680px; }
+.video-frame { max-width: 720px; }
+.slides-frame { max-width: 520px; }
