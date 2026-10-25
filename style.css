@@ -41,7 +41,7 @@ li { text-align: center; margin: 4px 0; }
   h1 { font-size: 33px; }
   h2 { font-size: 23px; }
   .topline { font-size: 12px; }
-  .sketch { font-size: clamp(8px, 2.8vw, 13px); }
+  .sketch { font-size: clamp(6px, 1.7vw, 11px); }
   li { margin: 8px 0; }
 }
 
