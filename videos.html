@@ -12,6 +12,10 @@
 .video-column > article > iframe { width: 100%; max-width: 100%; flex: none; }
 @media (max-width: 680px) { .video-column > article { min-height: 0; margin-bottom: 32px; } }
 @media (max-width: 680px) { .video-columns { grid-template-columns: 1fr; gap: 24px; } }
+.video-without-slides { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; margin: 0; }
+.video-without-slides > iframe { width: 72%; max-width: none; flex: 0 1 72%; margin: 12px 0; }
+.video-without-slides > p { flex: 0 1 28%; margin: 0; }
+@media (max-width: 680px) { .video-without-slides { flex-direction: column; } .video-without-slides > iframe { width: 100%; flex-basis: auto; margin: 12px auto; } .video-without-slides > p { flex-basis: auto; margin: 0 0 12px; } }
 </style>
 </head>
 <body>
@@ -174,8 +178,7 @@
   <h3>Versuch über den sittlichen Wert der Mathematik</h3>
   <p class="video-date"><time datetime="2026-10-15">Veröffentlicht am 15.10.2026</time></p>
   <p><a href="https://www.youtube.com/watch?v=WLzLqifrszU">Video auf YouTube öffnen</a></p>
-  <iframe class="video-frame" title="Versuch über den sittlichen Wert der Mathematik – Video" src="https://www.youtube-nocookie.com/embed/WLzLqifrszU" width="100%" height="450" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  <p>Vortrag ohne Folien</p>
+  <div class="video-without-slides"><iframe class="video-frame" title="Versuch über den sittlichen Wert der Mathematik – Video" src="https://www.youtube-nocookie.com/embed/WLzLqifrszU" width="100%" height="450" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><p>Vortrag ohne Folien</p></div>
 </article>
 <article>
   <h3>Kann Mathematik ohne uns existieren? Zum mathematischen Subjekt, Brouwer und KI</h3>
@@ -227,7 +230,7 @@
   <p><a href="godel-notizbuecher.pptx">PowerPoint-Folien herunterladen</a></p>
 </article>
 <article>
-  <h3>Leo Strauss und die Kunst des Schreibens</h3><p class="video-date"><time datetime="2026-05-05">Veröffentlicht am 05.05.2026</time></p><p><a href="https://www.youtube.com/watch?v=ficiuOjCmfo">Video auf YouTube öffnen</a></p><iframe class="video-frame" title="Leo Strauss und die Kunst des Schreibens – Video" src="https://www.youtube-nocookie.com/embed/ficiuOjCmfo" width="100%" height="450" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><p>Vortrag ohne Folien</p></article><article><h3>Negative Mathematik</h3>
+  <h3>Leo Strauss und die Kunst des Schreibens</h3><p class="video-date"><time datetime="2026-05-05">Veröffentlicht am 05.05.2026</time></p><p><a href="https://www.youtube.com/watch?v=ficiuOjCmfo">Video auf YouTube öffnen</a></p><div class="video-without-slides"><iframe class="video-frame" title="Leo Strauss und die Kunst des Schreibens – Video" src="https://www.youtube-nocookie.com/embed/ficiuOjCmfo" width="100%" height="450" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><p>Vortrag ohne Folien</p></div></article><article><h3>Negative Mathematik</h3>
   <p class="video-date"><time datetime="2025-08-02">Veröffentlicht am 02.08.2025</time></p>
   <p>Assoziativität, Identität, Invertierbarkeit und Kommutativität</p>
   <p><a href="https://www.youtube.com/watch?v=M7C2b3DK-qU">Video auf YouTube öffnen</a></p>
