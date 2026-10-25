@@ -29,7 +29,7 @@ nav a { display: inline-block; margin: 0 5px 6px; }
 .note { font-size: 16px; background: #ffffaa; display: inline; }
 .box { border: 1px solid #777; padding: 7px 11px 9px; width: fit-content; max-width: 100%; margin: 18px auto 0; }
 .box p { margin: 3px 0; }
-.sketch { font-size: 13px; font-family: Courier, monospace; white-space: pre; line-height: 1.12; display: inline-block; max-width: 100%; margin: 4px 0 0; color: #1b1b1b; }
+.sketch { font-size: clamp(7px, 1.3vw, 16px); font-family: Courier, monospace; white-space: pre; line-height: 1.12; display: inline-block; max-width: 100%; margin: 4px 0 0; color: #1b1b1b; }
 .float-thing { margin: 18px auto 20px; padding: 0; text-align: center; }
 .data { font-size: 15px; }
 .footer { font-size: 14px; margin-top: 48px; }
@@ -41,7 +41,6 @@ li { text-align: center; margin: 4px 0; }
   h1 { font-size: 33px; }
   h2 { font-size: 23px; }
   .topline { font-size: 12px; }
-  .sketch { font-size: clamp(6px, 1.7vw, 11px); }
   li { margin: 8px 0; }
 }
 
