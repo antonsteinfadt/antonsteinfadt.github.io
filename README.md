@@ -1,35 +1,22 @@
 # Anton Steinfadt – Homepage
 
-Eine schlichte persönliche Website mit weißem Hintergrund, Times-Schrift und blauen Links. Sie enthält die Bereiche Mathematik, Philosophie und Adversaria.
+Eine schlichte persönliche Website mit weißem Hintergrund, Times-Schrift und blauen Links. Die Bereiche Mathematik, Philosophie, Adversaria sowie Kontakt und Datenschutz sind über die Navigation erreichbar.
 
-## Einen Beitrag ergänzen
+## Beiträge ergänzen
 
-Die Website ist statisch. Neue Beiträge veröffentlichst du im jeweiligen Bereich über GitHub:
+Die Website ist statisch. Beiträge stehen in der passenden HTML-Datei: Mathematik in mathematik.html, Adversaria in notizen.html und Philosophie in philosophie.html.
 
-1. Öffne `notizen.html`, `mathematik.html` oder `philosophie.html` im Repository und wähle „Edit this file“.
-2. Suche nach dem Kommentar `<!-- Neue Beiträge hier ergänzen; eine Vorlage steht in README.md. -->` und füge dort einen Beitrag ein.
-3. Verwende diese Vorlage und ändere Überschrift, Datum und Text:
+Die Philosophieseite ist in die Unterkategorien „Philosophie der Mathematik“, „Politische Philosophie“ und „Videos“ gegliedert. Neue Einträge bitte innerhalb der passenden Überschrift ergänzen. Die Liste ist nach Datum absteigend sortiert – der neueste Beitrag steht zuerst.
 
-```html
-<article>
-  <h3>Titel des Beitrags</h3>
-  <p class="small">TT.MM.JJJJ</p>
-  <p>Hier steht der kurze Beitrag.</p>
-  <p><a href="pdfs/dateiname.pdf">PDF zum Beitrag (PDF)</a></p>
-</article>
-```
+## PDFs und Folien anhängen
 
-Die letzte Zeile ist optional. Entferne beim ersten eigenen Beitrag auch den Hinweis „Neue Beiträge folgen nach und nach.“. Speichere den Eintrag mit „Commit changes“; GitHub Pages aktualisiert die Website automatisch.
+Lade Dateien über „Add file“ → „Upload files“ in das Hauptverzeichnis des Repositorys. Verweise in der HTML-Datei auf genau denselben Dateinamen. PDFs lassen sich so im Browser öffnen. PowerPoint-Folien können als PPTX hochgeladen und über den Office-Webviewer eingebettet werden.
 
-## PDF-Dateien anhängen
-
-Lade PDFs in den Ordner `pdfs` im Repository. Wenn er noch nicht existiert, erstelle über „Add file“ → „Create new file“ die Datei `pdfs/.gitkeep`; damit wird der Ordner angelegt. Öffne anschließend den Ordner und lade dort die PDF-Datei über „Add file“ → „Upload files“ hoch. Verwende im Link exakt denselben Dateinamen, zum Beispiel `pdfs/arbeit.pdf`.
-
-Das Repository ist öffentlich. Beiträge und PDFs sind deshalb für alle zugänglich; lade nur Dateien hoch, die öffentlich sein dürfen.
+Das Repository und alle darin liegenden Dateien sind öffentlich zugänglich.
 
 ## Lokal ansehen
 
-Öffne `index.html` im Browser. Die Seite funktioniert ohne Installation oder externe Bibliotheken. `style.css` enthält die wenigen Stilregeln.
+Öffne index.html im Browser. Die Seite funktioniert ohne Installation oder externe Bibliotheken. style.css enthält die wenigen Stilregeln.
 
 ## Datenschutz
 
