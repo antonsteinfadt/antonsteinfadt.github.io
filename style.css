@@ -58,3 +58,5 @@ iframe {
 
 .video-frame { max-width: 720px; }
 .slides-frame { max-width: 520px; }
+
+.float-thing figcaption { margin-top: 0.55em; }
