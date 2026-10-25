@@ -12,10 +12,10 @@
 .video-column > article > iframe { width: 100%; max-width: 100%; flex: none; }
 @media (max-width: 680px) { .video-column > article { min-height: 0; margin-bottom: 32px; } }
 @media (max-width: 680px) { .video-columns { grid-template-columns: 1fr; gap: 24px; } }
-.video-without-slides { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; margin: 0; }
-.video-without-slides > iframe { width: 72%; max-width: none; flex: 0 1 72%; margin: 12px 0; }
-.video-without-slides > p { flex: 0 1 28%; margin: 0; }
-@media (max-width: 680px) { .video-without-slides { flex-direction: column; } .video-without-slides > iframe { width: 100%; flex-basis: auto; margin: 12px auto; } .video-without-slides > p { flex-basis: auto; margin: 0 0 12px; } }
+.video-without-slides { display: block; width: 100%; margin: 0; }
+.video-without-slides > iframe { display: block; width: 100%; max-width: 100%; margin: 12px auto; }
+.video-without-slides > p { margin: 120px 0 0; }
+@media (max-width: 680px) { .video-without-slides > p { margin: 12px 0; } }
 </style>
 </head>
 <body>
