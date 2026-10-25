@@ -55,3 +55,6 @@ iframe {
   border: 0;
   margin: 12px auto;
 }
+
+.video-frame { max-width: 960px; }
+.slides-frame { max-width: 680px; }
