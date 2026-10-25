@@ -6,7 +6,7 @@ Eine schlichte persönliche Website mit weißem Hintergrund, Times-Schrift und b
 
 Die Website ist statisch. Beiträge stehen in der passenden HTML-Datei: Mathematik in mathematik.html, Adversaria in notizen.html, Philosophie in philosophie.html und Videos in videos.html.
 
-Die Philosophieseite ist in „Philosophie der Mathematik“ und „Politische Philosophie“ gegliedert. Videos und zugehörige Folien stehen auf der eigenen Seite videos.html. Die Liste ist nach Datum absteigend sortiert – der neueste Beitrag steht zuerst.
+Die Philosophieseite ist in „Philosophie der Mathematik“ und „Politische Philosophie“ gegliedert. Die Videos stehen auf videos.html unter „Philosophie“ und „Mathematik“; zugehörige Folien können dort eingebettet und heruntergeladen werden. Die Liste ist nach Datum absteigend sortiert – der neueste Beitrag steht zuerst.
 
 ## PDFs und Folien anhängen
 
