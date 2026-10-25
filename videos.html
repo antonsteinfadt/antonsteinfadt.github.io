@@ -9,6 +9,7 @@
 .video-column > article > p { width: 100%; }
 .video-column > article > p.video-date { min-height: 1.3em; }
 .video-column > article > p:nth-of-type(2) { min-height: 2.6em; }
+.video-column > article > p:nth-of-type(2):has(a[href*="youtube.com"]) { margin-bottom: 36px; }
 .video-column > article > p:nth-of-type(2):has(a[href*="youtube.com"])::before { content: ""; display: block; height: 2.6em; }
 .video-column > article > iframe { width: 100%; max-width: 100%; flex: none; }
 @media (max-width: 680px) { .video-column > article { min-height: 0; margin-bottom: 32px; } }
