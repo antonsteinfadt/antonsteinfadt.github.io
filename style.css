@@ -44,3 +44,14 @@ li { text-align: center; margin: 4px 0; }
   .sketch { font-size: clamp(8px, 2.8vw, 13px); }
   li { margin: 8px 0; }
 }
+
+/* Embedded video and slides keep their proportions on narrow screens. */
+iframe {
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  margin: 12px auto;
+}
