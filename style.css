@@ -31,7 +31,7 @@ nav a { display: inline-block; margin: 0 5px 6px; }
 .box p { margin: 3px 0; }
 .sketch { font-size: clamp(7px, 1.3vw, 16px); font-family: Courier, monospace; white-space: pre; line-height: 1.12; display: inline-block; max-width: 100%; margin: 4px 0 0; color: #1b1b1b; }
 .float-thing { margin: 18px auto 20px; padding: 0; text-align: center; }
-.topographie-image { display: block; width: min(100%, 810px); height: auto; margin: 4px auto 0; }
+.topographie-image { display: block; width: min(100%, 561px); height: auto; margin: 4px auto 0; }
 .data { font-size: 15px; }
 .footer { font-size: 14px; margin-top: 48px; }
 ul { list-style-position: inside; padding: 0; }
