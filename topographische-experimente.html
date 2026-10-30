@@ -3,89 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Topographische Experimente – Anton Steinfadt</title>
-<meta name="description" content="Zwei kleine mathematische Experimente mit Zahlenkränzen und Sechseckrahmen zur Topographie der Zeichen.">
-<link rel="stylesheet" href="style.css?v=20261025b">
-<style>
-.topographische-notiz { margin: 0 auto 2em; }
-.topographische-notiz > p:not(.small) { text-align: left; }
-.topographische-notiz details { margin: 1em 0; }
-.topographische-notiz summary { cursor: pointer; color: #0000cc; text-decoration: underline; }
-.topographische-galerie { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: center; margin: 20px 0; }
-.topographische-galerie a { display: block; min-width: 0; }
-.topographische-galerie img { display: block; width: 100%; height: auto; max-height: 430px; object-fit: contain; }
-.topographische-galerie .wide { grid-column: 1 / -1; }
-.topographische-galerie .wide img { max-height: none; }
-@media (max-width: 600px) { .topographische-galerie { grid-template-columns: 1fr; gap: 20px; } }
-
-.potenzrahmen-abbildung { margin: 2em auto; }
-.potenzrahmen-abbildung img { display: block; width: auto; height: auto; max-width: 100%; max-height: 620px; margin: 0 auto; }
-.potenzrahmen-abbildung figcaption { margin: .6em auto 0; max-width: 760px; font-size: .9em; line-height: 1.4; }
-.kranz-zahl { white-space: nowrap; }
-.kranz-produkt { overflow-wrap: anywhere; }
-</style>
+<meta name="robots" content="noindex">
+<meta http-equiv="refresh" content="0; url=mathematik.html">
+<link rel="canonical" href="https://antonsteinfadt.github.io/mathematik.html">
+<title>Mathematik – Anton Steinfadt</title>
 </head>
 <body>
-<nav aria-label="Navigation">
-  <a href="index.html">Startseite</a>
-  <a href="mathematik.html">Mathematik</a>
-  <a href="philosophie.html">Philosophie</a>
-  <a href="videos.html">Videos</a>
-  <a href="notizen.html">Collectanea</a>
-</nav>
-<p class="small"><a href="mathematik.html">← Zur Mathematikübersicht</a></p>
-<main>
-<article id="topographische-experimente" class="topographische-notiz">
-  <h1>Topographische Experimente</h1>
-  <p class="small"><time datetime="2026-10-30">30. Oktober 2026</time> · Notiz</p>
-  <p>Ausgangspunkt dieser kleinen Notiz ist Abschnitt 6.3 („Topographie der Zeichen“) meiner Arbeit <a href="oberflaeche-der-mathematik.pdf">Die Oberfläche der Mathematik</a>. Für die Suche nach solchen topographischen Rekonfigurationen habe ich KI (GPT-6) eingesetzt; sie kann riesige Mengen von Figurationen untersuchen. Dabei kam ich zu den folgenden Fundstücken:</p>
-  <h2 id="sechseckrahmen">i) Sechseckrahmen</h2>
-  <p>Ordnet man die Dreieckszahlen in Zeilen der Längen 1, 2, 3, … an, erhält man für die alternierende Summe der sechs Ecken eines regelmäßigen Sechseckrahmens D = r³, bei passenden Scherungen D = hr² (h: horizontale Breite, r: Zeilenabstand). Der Ort ist beliebig: Durch Verschieben bekommt man neue Zahlenidentitäten.</p>
-  <details>
-    <summary>Sechseckrahmen – alle Abbildungen</summary>
-    <p class="small">Zum Vergrößern ein Bild anklicken.</p>
-    <div class="topographische-galerie">
-      <a href="topographische-experimente-18.png"><img src="topographische-experimente-18.png" alt="Regelmäßiger Sechseckrahmen mit r = 1: alternierende Summe D = 1." width="482" height="500" loading="lazy"></a>
-      <a href="topographische-experimente-19.png"><img src="topographische-experimente-19.png" alt="Verschobener Sechseckrahmen mit r = 1: D bleibt 1." width="570" height="580" loading="lazy"></a>
-      <a href="topographische-experimente-20.png"><img src="topographische-experimente-20.png" alt="Gescherter Sechseckrahmen mit h = r = 1: D = 1." width="530" height="506" loading="lazy"></a>
-      <a href="topographische-experimente-21.png"><img src="topographische-experimente-21.png" alt="Gescherter Sechseckrahmen mit h = 1 und r = 3: D = 9." width="637" height="629" loading="lazy"></a>
-      <a href="topographische-experimente-22.png"><img src="topographische-experimente-22.png" alt="Regelmäßiger Sechseckrahmen mit r = 2: D = 8 = 2 hoch 3." width="719" height="708" loading="lazy"></a>
-      <a href="topographische-experimente-23.png"><img src="topographische-experimente-23.png" alt="Regelmäßiger Sechseckrahmen mit r = 3: D = 27 = 3 hoch 3." width="770" height="744" loading="lazy"></a>
-      <a href="topographische-experimente-24.png" class="wide"><img src="topographische-experimente-24.png" alt="Zwei weitere Sechseckrahmen: verschoben mit r = 2 und geschert mit h = r = 2; beide liefern D = 8." width="1508" height="900" loading="lazy"></a>
-      <a href="topographische-experimente-25.png"><img src="topographische-experimente-25.png" alt="Schmaler Sechseckrahmen mit h = 1 und r = 2: D = 4." width="576" height="604" loading="lazy"></a>
-      <a href="topographische-experimente-26.png"><img src="topographische-experimente-26.png" alt="Breiter Sechseckrahmen mit h = 3 und r = 2: D = 12." width="622" height="518" loading="lazy"></a>
-      <a href="topographische-experimente-27.png"><img src="topographische-experimente-27.png" alt="Gescherter Sechseckrahmen mit h = 2 und r = 3: D = 18." width="595" height="611" loading="lazy"></a>
-      <a href="topographische-experimente-28.png"><img src="topographische-experimente-28.png" alt="Regelmäßiger Sechseckrahmen mit r = 4: D = 64 = 4 hoch 3." width="680" height="629" loading="lazy"></a>
-    </div>
-  </details>
-  <h2 id="zahlenkraenze">ii) Zahlenkränze</h2>
-  <p>Ordnet man die Produkte natürlicher Zahlen in einer Tafel an, findet man Kränze mit gleichen Summen, Quadratsummen und Produkten beider Farben – unabhängig von Lage und Streckung. Zusammengelegte, teils umgefärbte Kränze gleichen höhere Potenzen aus. Man erhält damit geometrische Lösungen des <a href="https://de.wikipedia.org/wiki/Prouhet-Tarry-Escott-Problem">Prouhet-Tarry-Escott-Problem</a>s.</p>
-  <p style="font-size: .85em;">Möglicher Vorläufer: Andreas Alpers / Rob Tijdeman, <a href="https://mediatum.ub.tum.de/doc/1392001/document.pdf">The two-dimensional Prouhet–Tarry–Escott problem</a> (2007), Abschnitt 2.3 (Achtpunkt-Figur). Die dort behandelten Gleichheiten betreffen gemischte Potenzsummen auf Gittern.</p>
-  <details>
-    <summary>Zahlenkränze – ausgewählte Bilder</summary>
-    <p class="small">Zum Vergrößern ein Bild anklicken. Die Werte unter jedem Bild gelten jeweils für beide Farbgruppen.</p>
-    <p class="small">K = Kranz, F = Potenzrahmen; der Index zählt die gleichen Potenzsummen (F₄: Potenzen 1–4). K(3, 7): verdoppelte Radien; −K: Farbtausch.</p>
-    <figure class="potenzrahmen-abbildung">
-      <a href="zahlenkraenze-drei-verschiebungen.png"><img src="zahlenkraenze-drei-verschiebungen.png" alt="Drei verschobene Grundkränze K₂ in derselben Multiplikationstafel." width="1373" height="1275" loading="lazy"></a>
-      <figcaption><strong>Grundkranz K₂ in drei Lagen.</strong> Jeweils für Blau und Orange:<br>I: Summe <span class="kranz-zahl">45</span>, Quadratsumme <span class="kranz-zahl">641</span>, Produkt <span class="kranz-zahl">8 640</span>.<br>II: Summe <span class="kranz-zahl">195</span>, Quadratsumme <span class="kranz-zahl">10 001</span>, Produkt <span class="kranz-zahl">5 080 320</span>.<br>III: Summe <span class="kranz-zahl">483</span>, Quadratsumme <span class="kranz-zahl">59 537</span>, Produkt <span class="kranz-zahl">203 860 800</span>.</figcaption>
-    </figure>
-    <figure class="potenzrahmen-abbildung">
-      <a href="zahlenkraenze-potenzrahmen-03.png"><img src="zahlenkraenze-potenzrahmen-03.png" alt="Zusammensetzung des Potenzrahmens F₄ aus zwei unterschiedlich proportionierten Kränzen." width="1450" height="507" loading="lazy"></a>
-      <figcaption><strong>Zwei Kränze ergeben den Potenzrahmen F₄.</strong> Ein Kranz wird umgefärbt, dann werden die Markierungen zusammengeführt.<br>Im Zahlenfenster der Zeilen 1–8 und Spalten 4–11 sind die Potenzsummen für die Exponenten 1–4 je Farbe: <span class="kranz-zahl">270</span>; <span class="kranz-zahl">14 578</span>; <span class="kranz-zahl">945 270</span>; <span class="kranz-zahl">66 119 986</span>. Gemeinsames Produkt: <span class="kranz-zahl">84 304 281 600</span>.</figcaption>
-    </figure>
-    <figure class="potenzrahmen-abbildung" id="abbildung-8">
-      <a href="zahlenkraenze-potenzrahmen-06.png"><img src="zahlenkraenze-potenzrahmen-06.png" alt="Abbildung 8: Anhebung von F₄ auf F₅ durch vier verschobene und teilweise umgefärbte Kopien." width="1447" height="743" loading="lazy"></a>
-      <figcaption><strong>Abbildung 8: Von F₄ zu F₅.</strong> Vier verschobene Kopien, davon zwei mit vertauschten Farben, erhöhen den ausgeglichenen Grad von vier auf fünf. Für die 32 Zahlen je Farbe sind damit die ersten fünf Potenzsummen und die Produkte gleich. Die konkreten Werte stehen unter Abbildung 9.</figcaption>
-    </figure>
-    <figure class="potenzrahmen-abbildung" id="abbildung-9">
-      <a href="zahlenkraenze-abbildung-09.png"><img src="zahlenkraenze-abbildung-09.png" alt="Abbildung 9: F₅ mit 64 Stellen in einer Multiplikationstafel." width="1096" height="1095" loading="lazy"></a>
-      <figcaption><strong>Abbildung 9: F₅ als Zahlenbeispiel.</strong> Im Fenster der Zeilen 1–16 und Spalten 4–19 sind die Potenzsummen für die Exponenten 1–5 je Farbe: <span class="kranz-zahl">3 128</span>; <span class="kranz-zahl">482 760</span>; <span class="kranz-zahl">92 529 368</span>; <span class="kranz-zahl">20 184 707 784</span>; <span class="kranz-zahl">4 787 526 120 248</span>.<br>Gemeinsames Produkt: <span class="kranz-produkt">13 667 787 213 944 905 463 008 903 287 332 270 875 645 231 654 502 400 000 000</span>.</figcaption>
-    </figure>
-  </details>
-  <p style="text-align: center;">Das Projekt entstand im Rahmen von Überlegungen zu <a href="https://terrytao.wordpress.com/2026/10/10/math-2-0/">Terence Taos „Math 2.0“</a>.</p>
-</article>
-<p><a href="mathematik.html">← Zur Mathematikübersicht</a></p>
-</main>
-<footer><p class="footer"><a href="impressum.html">Kontakt und Datenschutzhinweise</a></p></footer>
+<p><a href="mathematik.html">Zur Mathematikübersicht</a></p>
 </body>
 </html>
