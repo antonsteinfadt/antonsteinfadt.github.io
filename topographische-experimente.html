@@ -21,13 +21,8 @@
 .potenzrahmen-abbildung { margin: 2em auto; }
 .potenzrahmen-abbildung img { display: block; width: auto; height: auto; max-width: 100%; max-height: 620px; margin: 0 auto; }
 .potenzrahmen-abbildung figcaption { margin: .6em auto 0; max-width: 760px; font-size: .9em; line-height: 1.4; }
-.potenzrahmen-tabelle { border-collapse: collapse; margin: 1.5em auto 2em; max-width: 100%; font-variant-numeric: tabular-nums; }
-.potenzrahmen-tabelle caption { margin-bottom: .6em; font-size: .9em; }
-.potenzrahmen-tabelle th, .potenzrahmen-tabelle td { padding: .4em .65em; border-bottom: 1px solid #ccc; text-align: right; }
-.potenzrahmen-tabelle th:first-child { text-align: left; }
-.potenzrahmen-tabelle thead th { font-weight: normal; border-bottom: 1px solid #333; }
-.potenzrahmen-tabelle td { white-space: nowrap; }
-@media (max-width: 600px) { .potenzrahmen-tabelle { font-size: .85em; } .potenzrahmen-uebersicht { table-layout: fixed; width: 100%; } .potenzrahmen-uebersicht th { overflow-wrap: anywhere; } .potenzrahmen-tabelle th, .potenzrahmen-tabelle td { padding: .4em .3em; } }
+.kranz-zahl { white-space: nowrap; }
+.kranz-produkt { overflow-wrap: anywhere; }
 </style>
 </head>
 <body>
@@ -47,86 +42,22 @@
   <p>KI ermöglicht es, sehr große Mengen von Mustern in unterschiedlichen Figurationen systematisch zu untersuchen. Mit ihrer Hilfe führte diese Überlegung zu den folgenden Fundstücken. Das Projekt entstand im Rahmen von Überlegungen zu <a href="https://terrytao.wordpress.com/2026/10/10/math-2-0/">Terence Taos „Math 2.0“</a>.</p>
   <p>Hier sind zwei kleine Experimente, die mit KI entdeckt wurden:</p>
   <h2 id="zahlenkraenze">i) Zahlenkränze und Potenzrahmen</h2>
-  <p>Ordnet man die Produkte natürlicher Zahlen in einer Multiplikationstafel an, findet man den Grundkranz <i>K</i><sub>2</sub>: Acht Stellen bilden zwei Farbgruppen mit gleicher Summe, Quadratsumme und gleichem Produkt. Durch Kombination entstehen die Potenzrahmen <i>F</i><sub>4</sub> und <i>F</i><sub>6</sub> mit vier bzw. sechs gleichen Potenzsummen – auch nach Verschiebung und unabhängiger Achsenstreckung. Durch wiederholtes Kombinieren von vier passend verschobenen und umgefärbten Kopien lässt sich jeder endliche Grad erreichen. Das liefert räumliche Konstruktionen zum <a href="https://de.wikipedia.org/wiki/Prouhet-Tarry-Escott-Problem">Prouhet-Tarry-Escott-Problem</a>.</p>
-  <p>Für Rekursionstafeln <i>M</i><sub>ij</sub> = <i>u</i><sub>i</sub><i>u</i><sub>j</sub> mit <i>u</i><sub>n+2</sub> = λ<i>u</i><sub>n+1</sub> − <i>u</i><sub>n</sub> liefern <i>G</i><sub>3</sub> und <i>G</i><sub>4</sub> drei bzw. vier gleiche Potenzsummen. Hier bleiben Verschiebung und gleichmäßige Streckung erlaubt. Alle fünf Figuren erhalten außerdem die Produktgleichheit.</p>
-  <table class="potenzrahmen-tabelle potenzrahmen-uebersicht">
-    <caption>Figuren im Vergleich: Potenzsummen bis zum angegebenen Grad</caption>
-    <thead><tr><th scope="col">Figur</th><th scope="col">Stellen</th><th scope="col">Multiplikationstafel</th><th scope="col">Alle Rekursionstafeln</th></tr></thead>
-    <tbody>
-      <tr><th scope="row"><i>K</i><sub>2</sub></th><td>8</td><td>2</td><td>2</td></tr>
-      <tr><th scope="row"><i>F</i><sub>4</sub></th><td>16</td><td>4</td><td>2</td></tr>
-      <tr><th scope="row"><i>F</i><sub>6</sub></th><td>48</td><td>6</td><td>2</td></tr>
-      <tr><th scope="row"><i>G</i><sub>3</sub></th><td>56</td><td>4</td><td>3</td></tr>
-      <tr><th scope="row"><i>G</i><sub>4</sub></th><td>80</td><td>6</td><td>4</td></tr>
-    </tbody>
-  </table>
+  <p>Ordnet man die Produkte natürlicher Zahlen in einer Multiplikationstafel an, findet man den Grundkranz <i>K</i><sub>2</sub>: Acht Stellen bilden zwei Farbgruppen mit gleicher Summe, Quadratsumme und gleichem Produkt. Die Gleichheiten bleiben beim Verschieben und Strecken erhalten. Durch Zusammensetzen entstehen die Potenzrahmen <i>F</i><sub>4</sub> mit 16 und <i>F</i><sub>6</sub> mit 48 Stellen: Ihre Farbgruppen stimmen in den ersten vier bzw. sechs Potenzsummen und im Produkt überein. Das liefert anschauliche Konstruktionen zum <a href="https://de.wikipedia.org/wiki/Prouhet-Tarry-Escott-Problem">Prouhet-Tarry-Escott-Problem</a>.</p>
   <details>
-    <summary>Zahlenkränze und Potenzrahmen – Bilder und Tabellen</summary>
-    <p class="small">Auswahl aus „Zahlenkränze und Potenzrahmen“. Zum Vergrößern ein Bild anklicken.</p>
+    <summary>Zahlenkränze und Potenzrahmen – ausgewählte Bilder</summary>
+    <p class="small">Zum Vergrößern ein Bild anklicken. Die Werte unter jedem Bild gelten jeweils für beide Farbgruppen.</p>
     <figure class="potenzrahmen-abbildung">
-      <a href="zahlenkraenze-potenzrahmen-01.png"><img src="zahlenkraenze-potenzrahmen-01.png" alt="Grundkranz K₂: Jede Farbe belegt jede beteiligte Zeile und Spalte genau einmal." width="1322" height="633" loading="lazy"></a>
-      <figcaption>Grundkranz K₂: Jede Farbe belegt jede beteiligte Zeile und Spalte genau einmal.</figcaption>
+      <a href="zahlenkraenze-drei-verschiebungen.png"><img src="zahlenkraenze-drei-verschiebungen.png" alt="Drei verschobene Grundkränze K₂ in derselben Multiplikationstafel." width="1373" height="1275" loading="lazy"></a>
+      <figcaption><strong>Grundkranz K₂ in drei Lagen.</strong> Jeweils für Blau und Orange:<br>I: Summe <span class="kranz-zahl">45</span>, Quadratsumme <span class="kranz-zahl">641</span>, Produkt <span class="kranz-zahl">8 640</span>.<br>II: Summe <span class="kranz-zahl">195</span>, Quadratsumme <span class="kranz-zahl">10 001</span>, Produkt <span class="kranz-zahl">5 080 320</span>.<br>III: Summe <span class="kranz-zahl">483</span>, Quadratsumme <span class="kranz-zahl">59 537</span>, Produkt <span class="kranz-zahl">203 860 800</span>.</figcaption>
     </figure>
     <figure class="potenzrahmen-abbildung">
-      <a href="zahlenkraenze-potenzrahmen-02.png"><img src="zahlenkraenze-potenzrahmen-02.png" alt="K₂ nach gleichmäßiger und unabhängiger Achsenstreckung in der Multiplikationstafel." width="1285" height="1318" loading="lazy"></a>
-      <figcaption>K₂ nach gleichmäßiger und unabhängiger Achsenstreckung in der Multiplikationstafel.</figcaption>
+      <a href="zahlenkraenze-potenzrahmen-03.png"><img src="zahlenkraenze-potenzrahmen-03.png" alt="Zusammensetzung des Potenzrahmens F₄ aus zwei unterschiedlich proportionierten Kränzen." width="1450" height="507" loading="lazy"></a>
+      <figcaption><strong>Zwei Kränze ergeben den Potenzrahmen F₄.</strong> Ein Kranz wird umgefärbt, dann werden die Markierungen zusammengeführt. Die Radien sind im Bild verdoppelt angegeben.<br>Im Zahlenfenster der Zeilen 1–8 und Spalten 4–11 sind die Potenzsummen für die Exponenten 1–4 je Farbe: <span class="kranz-zahl">270</span>; <span class="kranz-zahl">14 578</span>; <span class="kranz-zahl">945 270</span>; <span class="kranz-zahl">66 119 986</span>. Gemeinsames Produkt: <span class="kranz-zahl">84 304 281 600</span>.</figcaption>
     </figure>
     <figure class="potenzrahmen-abbildung">
-      <a href="zahlenkraenze-potenzrahmen-03.png"><img src="zahlenkraenze-potenzrahmen-03.png" alt="Potenzrahmen F₄ aus zwei entgegengesetzt gefärbten Kränzen: 16 Stellen, vier gleiche Potenzsummen. Die Radien sind im Bild verdoppelt angegeben." width="1450" height="507" loading="lazy"></a>
-      <figcaption>Potenzrahmen F₄ aus zwei entgegengesetzt gefärbten Kränzen: 16 Stellen, vier gleiche Potenzsummen. Die Radien sind im Bild verdoppelt angegeben.</figcaption>
+      <a href="zahlenkraenze-potenzrahmen-05.png"><img src="zahlenkraenze-potenzrahmen-05.png" alt="Potenzrahmen F₆ mit 48 Stellen und sechs gleichen Potenzsummen." width="1366" height="1365" loading="lazy"></a>
+      <figcaption><strong>Potenzrahmen F₆ mit 48 Stellen.</strong> Die Potenzsummen für die Exponenten 1–6 sind je Farbe: <span class="kranz-zahl">5 994</span>; <span class="kranz-zahl">2 592 470</span>; <span class="kranz-zahl">1 372 751 874</span>; <span class="kranz-zahl">794 287 759 046</span>; <span class="kranz-zahl">483 793 566 201 954</span>; <span class="kranz-zahl">305 120 225 658 672 710</span>.<br>Gemeinsames Produkt: <span class="kranz-produkt">56 537 646 896 625 619 750 781 353 104 763 001 650 544 640 000 000 000</span>.</figcaption>
     </figure>
-    <figure class="potenzrahmen-abbildung">
-      <a href="zahlenkraenze-potenzrahmen-04.png"><img src="zahlenkraenze-potenzrahmen-04.png" alt="F₄ in Ausgangslage, verschoben und horizontal gestreckt: Die Zahlenwerte ändern sich, die vier Potenzgleichheiten bleiben erhalten." width="1295" height="1402" loading="lazy"></a>
-      <figcaption>F₄ in Ausgangslage, verschoben und horizontal gestreckt: Die Zahlenwerte ändern sich, die vier Potenzgleichheiten bleiben erhalten.</figcaption>
-    </figure>
-    <table class="potenzrahmen-tabelle">
-      <caption>F₄ (Zeilen 1–8, Spalten 4–11): gemeinsame Potenzsummen im gezeigten Zahlenfenster</caption>
-      <thead><tr><th scope="col">Potenz <i>k</i></th><th scope="col">Potenzsumme je Farbe</th></tr></thead>
-      <tbody><tr><th scope="row">1</th><td>270</td></tr><tr><th scope="row">2</th><td>14 578</td></tr><tr><th scope="row">3</th><td>945 270</td></tr><tr><th scope="row">4</th><td>66 119 986</td></tr></tbody>
-    </table>
-    <figure class="potenzrahmen-abbildung">
-      <a href="zahlenkraenze-potenzrahmen-05.png"><img src="zahlenkraenze-potenzrahmen-05.png" alt="Potenzrahmen F₆: 48 Stellen, sechs gleiche Potenzsummen. Leere Felder sind unmarkierte Tafelstellen, keine Nullen." width="1366" height="1365" loading="lazy"></a>
-      <figcaption>Potenzrahmen F₆: 48 Stellen, sechs gleiche Potenzsummen. Leere Felder sind unmarkierte Tafelstellen, keine Nullen.</figcaption>
-    </figure>
-    <table class="potenzrahmen-tabelle">
-      <caption>F₆ (Zeilen 2–25, Spalten 7–30): gemeinsame Potenzsummen im gezeigten Zahlenfenster</caption>
-      <thead><tr><th scope="col">Potenz <i>k</i></th><th scope="col">Potenzsumme je Farbe</th></tr></thead>
-      <tbody><tr><th scope="row">1</th><td>5994</td></tr><tr><th scope="row">2</th><td>2 592 470</td></tr><tr><th scope="row">3</th><td>1 372 751 874</td></tr><tr><th scope="row">4</th><td>794 287 759 046</td></tr><tr><th scope="row">5</th><td>483 793 566 201 954</td></tr><tr><th scope="row">6</th><td>305 120 225 658 672 710</td></tr></tbody>
-    </table>
-    <figure class="potenzrahmen-abbildung">
-      <a href="zahlenkraenze-potenzrahmen-06.png"><img src="zahlenkraenze-potenzrahmen-06.png" alt="Von F₄ zu F₅: Vier verschobene Kopien, davon zwei mit vertauschten Farben, erhöhen den ausgeglichenen Grad." width="1447" height="743" loading="lazy"></a>
-      <figcaption>Von F₄ zu F₅: Vier verschobene Kopien, davon zwei mit vertauschten Farben, erhöhen den ausgeglichenen Grad.</figcaption>
-    </figure>
-    <figure class="potenzrahmen-abbildung">
-      <a href="zahlenkraenze-potenzrahmen-07.png"><img src="zahlenkraenze-potenzrahmen-07.png" alt="Aufbau von K₂ aus vier Differenzfaktoren: Nach Überlagerung und Kürzung bleiben 2, 4, 6 und schließlich 8 Stellen." width="1471" height="444" loading="lazy"></a>
-      <figcaption>Aufbau von K₂ aus vier Differenzfaktoren: Nach Überlagerung und Kürzung bleiben 2, 4, 6 und schließlich 8 Stellen.</figcaption>
-    </figure>
-    <figure class="potenzrahmen-abbildung">
-      <a href="zahlenkraenze-potenzrahmen-08.png"><img src="zahlenkraenze-potenzrahmen-08.png" alt="G₃ und G₄: 56 bzw. 80 Stellen für drei bzw. vier gleiche Potenzsummen auf allen beschriebenen Rekursionstafeln." width="1453" height="738" loading="lazy"></a>
-      <figcaption>G₃ und G₄: 56 bzw. 80 Stellen für drei bzw. vier gleiche Potenzsummen auf allen beschriebenen Rekursionstafeln.</figcaption>
-    </figure>
-    <details>
-      <summary>Weitere Ansichten der Zahlenkränze</summary>
-    <div class="topographische-galerie">
-      <a href="topographische-experimente-01.png"><img src="topographische-experimente-01.png" alt="Zahlenkranz in Ausgangslage: gleiche Summe 45, Quadratsumme 641 und gleiches Produkt 8640." width="379" height="498" loading="lazy"></a>
-      <a href="topographische-experimente-02.png"><img src="topographische-experimente-02.png" alt="Verschobener Zahlenkranz: gleiche Summe 195, Quadratsumme 10001 und gleiches Produkt 5080320." width="379" height="498" loading="lazy"></a>
-      <a href="topographische-experimente-03.png"><img src="topographische-experimente-03.png" alt="16-Stellen-Rahmen: gleiche Potenzsummen bis zur vierten Potenz und gleiche Produkte." width="505" height="605" loading="lazy"></a>
-      <a href="topographische-experimente-04.png"><img src="topographische-experimente-04.png" alt="48-Stellen-Rahmen: gleiche Potenzsummen bis zur sechsten Potenz." width="493" height="593" loading="lazy"></a>
-      <a href="topographische-experimente-05.png" class="wide"><img src="topographische-experimente-05.png" alt="Drei Lagen desselben Zahlenkranzes in einer Multiplikationstafel; die Farbgruppen bleiben jeweils im Gleichgewicht." width="1249" height="993" loading="lazy"></a>
-      <a href="topographische-experimente-06.png"><img src="topographische-experimente-06.png" alt="In beiden Richtungen gestreckter Kranz mit Schrittweiten h = k = 2." width="604" height="636" loading="lazy"></a>
-      <a href="topographische-experimente-07.png"><img src="topographische-experimente-07.png" alt="Horizontal gestreckter Kranz mit Schrittweiten h = 1 und k = 3." width="710" height="488" loading="lazy"></a>
-      <a href="topographische-experimente-08.png" class="wide"><img src="topographische-experimente-08.png" alt="Konstruktion in drei Bildern: K(3,7) plus der umgefärbte Kranz K(5,7) ergibt den 16-Stellen-Rahmen F4." width="1371" height="463" loading="lazy"></a>
-      <a href="topographische-experimente-09.png"><img src="topographische-experimente-09.png" alt="Grundkranz in der rekursiven Zahlentafel: gleiche Summe 252, Quadratsumme 33310 und gleiches Produkt 574600." width="387" height="509" loading="lazy"></a>
-      <a href="topographische-experimente-10.png"><img src="topographische-experimente-10.png" alt="Vertikale Streckung in der rekursiven Tafel: Summendifferenz 928, Produkte weiterhin gleich." width="386" height="689" loading="lazy"></a>
-      <a href="topographische-experimente-11.png"><img src="topographische-experimente-11.png" alt="Horizontale Streckung in der rekursiven Tafel: Summendifferenz minus 912, Produkte weiterhin gleich." width="528" height="515" loading="lazy"></a>
-      <a href="topographische-experimente-12.png"><img src="topographische-experimente-12.png" alt="Kleiner Zahlenkranz: gemeinsame Summe 49 und Quadratsumme 725." width="567" height="664" loading="lazy"></a>
-      <a href="topographische-experimente-13.png"><img src="topographische-experimente-13.png" alt="Zahlenkranz in mittlerer Lage: gemeinsame Summe 187 und Quadratsumme 9257." width="567" height="664" loading="lazy"></a>
-      <a href="topographische-experimente-14.png"><img src="topographische-experimente-14.png" alt="Zahlenkranz in größerer Lage: gemeinsame Summe 437 und Quadratsumme 48857." width="569" height="655" loading="lazy"></a>
-      <a href="topographische-experimente-15.png"><img src="topographische-experimente-15.png" alt="Horizontal gedehnter Zahlenkranz mit Schrittweite 1 mal 2." width="694" height="520" loading="lazy"></a>
-      <a href="topographische-experimente-16.png"><img src="topographische-experimente-16.png" alt="Vertikal gedehnter Zahlenkranz mit Schrittweite 2 mal 1." width="684" height="1219" loading="lazy"></a>
-      <a href="topographische-experimente-17.png"><img src="topographische-experimente-17.png" alt="Grob gestreckter Zahlenkranz mit Schrittweite 2 mal 2." width="702" height="790" loading="lazy"></a>
-    </div>
-    </details>
   </details>
   <h2 id="sechseckrahmen">ii) Sechseckrahmen</h2>
   <p>Ordnet man die Dreieckszahlen in Zeilen der Längen 1, 2, 3, … an, ergibt die alternierende Summe der sechs Ecken bei regelmäßigen Rahmen lageunabhängig <i>D</i> = <i>r</i><sup>3</sup>, bei passenden Scherungen <i>D</i> = <i>h</i><i>r</i><sup>2</sup> (<i>h</i>: horizontale Breite, <i>r</i>: Zeilenabstand). Die Figuren machen so Invarianten sichtbar und liefern systematisch neue Zahlenidentitäten.</p>
