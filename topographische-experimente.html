@@ -40,7 +40,6 @@
   <p class="small"><time datetime="2026-10-30">30. Oktober 2026</time> · Notiz</p>
   <p>Ausgangspunkt ist die Überlegung, dass eine veränderte räumliche Anordnung von Zeichen – ihre Rekonfiguration – neue mathematische Beziehungen sichtbar machen und zu neuen Resultaten führen kann. Sie knüpft an Abschnitt 6.3 „Topographie der Zeichen“ meiner Arbeit <a href="oberflaeche-der-mathematik.pdf">Die Oberfläche der Mathematik</a> an.</p>
   <p>KI ermöglicht es, sehr große Mengen von Mustern in unterschiedlichen Figurationen systematisch zu untersuchen. Mit ihrer Hilfe führte diese Überlegung zu den folgenden Fundstücken. Das Projekt entstand im Rahmen von Überlegungen zu <a href="https://terrytao.wordpress.com/2026/10/10/math-2-0/">Terence Taos „Math 2.0“</a>.</p>
-  <p>Hier sind zwei kleine Experimente, die mit KI entdeckt wurden:</p>
   <h2 id="zahlenkraenze">i) Zahlenkränze und Potenzrahmen</h2>
   <p>Ordnet man die Produkte natürlicher Zahlen in einer Multiplikationstafel an, findet man den Grundkranz <i>K</i><sub>2</sub>: Acht Stellen bilden zwei Farbgruppen mit gleicher Summe, Quadratsumme und gleichem Produkt. Die Gleichheiten bleiben beim Verschieben und Strecken erhalten. Durch Zusammensetzen entstehen die Potenzrahmen <i>F</i><sub>4</sub> mit 16 und <i>F</i><sub>6</sub> mit 48 Stellen: Ihre Farbgruppen stimmen in den ersten vier bzw. sechs Potenzsummen und im Produkt überein. Das liefert anschauliche Konstruktionen zum <a href="https://de.wikipedia.org/wiki/Prouhet-Tarry-Escott-Problem">Prouhet-Tarry-Escott-Problem</a>.</p>
   <details>
@@ -57,6 +56,22 @@
     <figure class="potenzrahmen-abbildung">
       <a href="zahlenkraenze-potenzrahmen-05.png"><img src="zahlenkraenze-potenzrahmen-05.png" alt="Potenzrahmen F₆ mit 48 Stellen und sechs gleichen Potenzsummen." width="1366" height="1365" loading="lazy"></a>
       <figcaption><strong>Potenzrahmen F₆ mit 48 Stellen.</strong> Die Potenzsummen für die Exponenten 1–6 sind je Farbe: <span class="kranz-zahl">5 994</span>; <span class="kranz-zahl">2 592 470</span>; <span class="kranz-zahl">1 372 751 874</span>; <span class="kranz-zahl">794 287 759 046</span>; <span class="kranz-zahl">483 793 566 201 954</span>; <span class="kranz-zahl">305 120 225 658 672 710</span>.<br>Gemeinsames Produkt: <span class="kranz-produkt">56 537 646 896 625 619 750 781 353 104 763 001 650 544 640 000 000 000</span>.</figcaption>
+    </figure>
+    <figure class="potenzrahmen-abbildung" id="abbildung-8">
+      <a href="zahlenkraenze-potenzrahmen-06.png"><img src="zahlenkraenze-potenzrahmen-06.png" alt="Abbildung 8: Anhebung von F₄ auf F₅ durch vier verschobene und teilweise umgefärbte Kopien." width="1447" height="743" loading="lazy"></a>
+      <figcaption><strong>Abbildung 8: Von F₄ zu F₅.</strong> Vier verschobene Kopien, davon zwei mit vertauschten Farben, erhöhen den ausgeglichenen Grad von vier auf fünf. Für die 32 Zahlen je Farbe sind damit die ersten fünf Potenzsummen und die Produkte gleich. Die konkreten Werte stehen unter Abbildung 9.</figcaption>
+    </figure>
+    <figure class="potenzrahmen-abbildung" id="abbildung-9">
+      <a href="zahlenkraenze-abbildung-09.png"><img src="zahlenkraenze-abbildung-09.png" alt="Abbildung 9: F₅ mit 64 Stellen in einer Multiplikationstafel." width="1096" height="1095" loading="lazy"></a>
+      <figcaption><strong>Abbildung 9: F₅ als Zahlenbeispiel.</strong> Im Fenster der Zeilen 1–16 und Spalten 4–19 sind die Potenzsummen für die Exponenten 1–5 je Farbe: <span class="kranz-zahl">3 128</span>; <span class="kranz-zahl">482 760</span>; <span class="kranz-zahl">92 529 368</span>; <span class="kranz-zahl">20 184 707 784</span>; <span class="kranz-zahl">4 787 526 120 248</span>.<br>Gemeinsames Produkt: <span class="kranz-produkt">13 667 787 213 944 905 463 008 903 287 332 270 875 645 231 654 502 400 000 000</span>.</figcaption>
+    </figure>
+    <figure class="potenzrahmen-abbildung" id="abbildung-10">
+      <a href="zahlenkraenze-abbildung-10.png"><img src="zahlenkraenze-abbildung-10.png" alt="Abbildung 10: Vergleich der 48-Stellen-Figur mit der 256-Stellen-Figur für sechs gleiche Potenzsummen." width="997" height="503" loading="lazy"></a>
+      <figcaption><strong>Abbildung 10: Zwei Wege zu sechs gleichen Potenzsummen.</strong> Links die kompakte Figur aus sechs Kränzen mit 48 Stellen; rechts die zweimalige Anhebung von F₄ mit 256 Stellen. Innerhalb jeder Figur stimmen die ersten sechs Potenzsummen und das Produkt beider Farben überein. Die Zahlenwerte hängen vom gewählten Tafelabschnitt ab; die Werte der linken Figur stehen beim Zahlenbild F₆ oben.</figcaption>
+    </figure>
+    <figure class="potenzrahmen-abbildung" id="abbildung-16">
+      <a href="zahlenkraenze-abbildung-16.png"><img src="zahlenkraenze-abbildung-16.png" alt="Abbildung 16: Die 56-Stellen-Figur G₃ mit Produkten einer rekursiv gebildeten Folge." width="1221" height="1210" loading="lazy"></a>
+      <figcaption><strong>Abbildung 16: G₃ auf einer Rekursionstafel.</strong> Die beiden Faktoren in jedem Kreis werden multipliziert. Für Folgen mit <i>u</i><sub>n+2</sub> = λ<i>u</i><sub>n+1</sub> − <i>u</i><sub>n</sub> haben die 28 Zahlen je Farbe gleiche Summen, Quadratsummen, Kubiksummen und Produkte.<br>Für <i>u</i><sub>0</sub> = 1, <i>u</i><sub>1</sub> = 2 und λ = 3 sind die Potenzsummen: <span class="kranz-zahl">215 528 124</span>; <span class="kranz-zahl">17 121 056 896 772 620</span>; <span class="kranz-zahl">1 826 886 287 969 657 993 700 468</span>.<br>Gemeinsames Produkt (in Primfaktoren): <span class="kranz-produkt">2<sup>20</sup> · 5<sup>13</sup> · 13<sup>9</sup> · 17<sup>5</sup> · 37<sup>4</sup> · 61<sup>6</sup> · 89<sup>6</sup> · 113<sup>4</sup> · 233<sup>6</sup> · 421<sup>5</sup> · 1597<sup>5</sup> · 3001 · 28657<sup>4</sup></span>.</figcaption>
     </figure>
   </details>
   <h2 id="sechseckrahmen">ii) Sechseckrahmen</h2>
