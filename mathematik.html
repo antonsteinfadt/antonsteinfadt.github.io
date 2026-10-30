@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="de">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Mathematik – Anton Steinfadt</title><link rel="stylesheet" href="style.css?v=20261025b"></head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Mathematik – Anton Steinfadt</title><link rel="stylesheet" href="style.css?v=20261025b">
+<style>
+.topographische-notiz { margin: 0 auto 2em; }
+.topographische-notiz > p:not(.small) { text-align: left; }
+.topographische-notiz details { margin: 1em 0; }
+.topographische-notiz summary { cursor: pointer; color: #0000cc; text-decoration: underline; }
+.topographische-galerie { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: center; margin: 20px 0; }
+.topographische-galerie a { display: block; min-width: 0; }
+.topographische-galerie img { display: block; width: 100%; height: auto; max-height: 430px; object-fit: contain; }
+.topographische-galerie .wide { grid-column: 1 / -1; }
+.topographische-galerie .wide img { max-height: none; }
+@media (max-width: 600px) { .topographische-galerie { grid-template-columns: 1fr; gap: 20px; } }
+</style>
+</head>
 <body>
 <nav aria-label="Navigation">
   <a href="index.html">Startseite</a>
@@ -13,8 +26,53 @@
 <p>Hier sammle ich Notizen zu mathematischen Fragen und Themen, mit denen ich mich beschäftige.</p>
 <hr>
 <h2>Beiträge</h2>
-<p class="small">Neue Beiträge folgen nach und nach.</p>
-<!-- Neue Beiträge hier ergänzen; eine Vorlage steht in README.md. -->
+<article id="topographische-experimente" class="topographische-notiz">
+  <h3>Topographische Experimente</h3>
+  <p class="small"><time datetime="2026-10-30">30. Oktober 2026</time> · Notiz</p>
+  <p>Ein anderer Blick auf dieselbe Zahlentafel: Farbige Lesefiguren machen Beziehungen sichtbar, die beim zeilenweisen Lesen verborgen bleiben.</p>
+  <p><strong>Zahlenkränze.</strong> Acht Stellen der Multiplikationstafel bilden zwei Farbgruppen mit gleicher Summe, Quadratsumme und gleichem Produkt – auch nach Verschiebung und Streckung. Geeignet kombinierte Kränze gleichen mit 16 bzw. 48 Stellen sogar die Potenzsummen bis Grad 4 bzw. 6 aus. Das liefert anschauliche Konstruktionen zum <a href="https://de.wikipedia.org/wiki/Prouhet-Tarry-Escott-Problem">Prouhet-Tarry-Escott-Problem</a>. In der Tafel <i>M</i><sub>ij</sub> = <i>u</i><sub>i</sub><i>u</i><sub>j</sub> mit <i>u</i><sub>0</sub> = 1, <i>u</i><sub>1</sub> = 2, <i>u</i><sub>n+2</sub> = 3<i>u</i><sub>n+1</sub> − <i>u</i><sub>n</sub> gilt der Grundkranz ebenfalls; ungleichmäßige Streckung erhält hier nur die Produktgleichheit.</p>
+  <details>
+    <summary>Zahlenkränze – alle Abbildungen</summary>
+    <p class="small">Zum Vergrößern ein Bild anklicken.</p>
+    <div class="topographische-galerie">
+      <a href="topographische-experimente-01.png"><img src="topographische-experimente-01.png" alt="Zahlenkranz in Ausgangslage: gleiche Summe 45, Quadratsumme 641 und gleiches Produkt 8640." width="379" height="498" loading="lazy"></a>
+      <a href="topographische-experimente-02.png"><img src="topographische-experimente-02.png" alt="Verschobener Zahlenkranz: gleiche Summe 195, Quadratsumme 10001 und gleiches Produkt 5080320." width="379" height="498" loading="lazy"></a>
+      <a href="topographische-experimente-03.png"><img src="topographische-experimente-03.png" alt="16-Stellen-Rahmen: gleiche Potenzsummen bis zur vierten Potenz und gleiche Produkte." width="505" height="605" loading="lazy"></a>
+      <a href="topographische-experimente-04.png"><img src="topographische-experimente-04.png" alt="48-Stellen-Rahmen: gleiche Potenzsummen bis zur sechsten Potenz." width="493" height="593" loading="lazy"></a>
+      <a href="topographische-experimente-05.png" class="wide"><img src="topographische-experimente-05.png" alt="Drei Lagen desselben Zahlenkranzes in einer Multiplikationstafel; die Farbgruppen bleiben jeweils im Gleichgewicht." width="1249" height="993" loading="lazy"></a>
+      <a href="topographische-experimente-06.png"><img src="topographische-experimente-06.png" alt="In beiden Richtungen gestreckter Kranz mit Schrittweiten h = k = 2." width="604" height="636" loading="lazy"></a>
+      <a href="topographische-experimente-07.png"><img src="topographische-experimente-07.png" alt="Horizontal gestreckter Kranz mit Schrittweiten h = 1 und k = 3." width="710" height="488" loading="lazy"></a>
+      <a href="topographische-experimente-08.png" class="wide"><img src="topographische-experimente-08.png" alt="Konstruktion in drei Bildern: K(3,7) plus der umgefärbte Kranz K(5,7) ergibt den 16-Stellen-Rahmen F4." width="1371" height="463" loading="lazy"></a>
+      <a href="topographische-experimente-09.png"><img src="topographische-experimente-09.png" alt="Grundkranz in der rekursiven Zahlentafel: gleiche Summe 252, Quadratsumme 33310 und gleiches Produkt 574600." width="387" height="509" loading="lazy"></a>
+      <a href="topographische-experimente-10.png"><img src="topographische-experimente-10.png" alt="Vertikale Streckung in der rekursiven Tafel: Summendifferenz 928, Produkte weiterhin gleich." width="386" height="689" loading="lazy"></a>
+      <a href="topographische-experimente-11.png"><img src="topographische-experimente-11.png" alt="Horizontale Streckung in der rekursiven Tafel: Summendifferenz minus 912, Produkte weiterhin gleich." width="528" height="515" loading="lazy"></a>
+      <a href="topographische-experimente-12.png"><img src="topographische-experimente-12.png" alt="Kleiner Zahlenkranz: gemeinsame Summe 49 und Quadratsumme 725." width="567" height="664" loading="lazy"></a>
+      <a href="topographische-experimente-13.png"><img src="topographische-experimente-13.png" alt="Zahlenkranz in mittlerer Lage: gemeinsame Summe 187 und Quadratsumme 9257." width="567" height="664" loading="lazy"></a>
+      <a href="topographische-experimente-14.png"><img src="topographische-experimente-14.png" alt="Zahlenkranz in größerer Lage: gemeinsame Summe 437 und Quadratsumme 48857." width="569" height="655" loading="lazy"></a>
+      <a href="topographische-experimente-15.png"><img src="topographische-experimente-15.png" alt="Horizontal gedehnter Zahlenkranz mit Schrittweite 1 mal 2." width="694" height="520" loading="lazy"></a>
+      <a href="topographische-experimente-16.png"><img src="topographische-experimente-16.png" alt="Vertikal gedehnter Zahlenkranz mit Schrittweite 2 mal 1." width="684" height="1219" loading="lazy"></a>
+      <a href="topographische-experimente-17.png"><img src="topographische-experimente-17.png" alt="Grob gestreckter Zahlenkranz mit Schrittweite 2 mal 2." width="702" height="790" loading="lazy"></a>
+    </div>
+  </details>
+  <p><strong>Sechseckrahmen.</strong> Ordnet man die Dreieckszahlen in Zeilen der Längen 1, 2, 3, … an, ergibt die alternierende Summe der sechs Ecken bei regelmäßigen Rahmen lageunabhängig <i>D</i> = <i>r</i><sup>3</sup>, bei passenden Scherungen <i>D</i> = <i>h</i><i>r</i><sup>2</sup> (<i>h</i>: horizontale Breite, <i>r</i>: Zeilenabstand). Die Figuren machen so Invarianten sichtbar und liefern systematisch neue Zahlenidentitäten.</p>
+  <details>
+    <summary>Sechseckrahmen – alle Abbildungen</summary>
+    <p class="small">Zum Vergrößern ein Bild anklicken.</p>
+    <div class="topographische-galerie">
+      <a href="topographische-experimente-18.png"><img src="topographische-experimente-18.png" alt="Regelmäßiger Sechseckrahmen mit r = 1: alternierende Summe D = 1." width="482" height="500" loading="lazy"></a>
+      <a href="topographische-experimente-19.png"><img src="topographische-experimente-19.png" alt="Verschobener Sechseckrahmen mit r = 1: D bleibt 1." width="570" height="580" loading="lazy"></a>
+      <a href="topographische-experimente-20.png"><img src="topographische-experimente-20.png" alt="Gescherter Sechseckrahmen mit h = r = 1: D = 1." width="530" height="506" loading="lazy"></a>
+      <a href="topographische-experimente-21.png"><img src="topographische-experimente-21.png" alt="Gescherter Sechseckrahmen mit h = 1 und r = 3: D = 9." width="637" height="629" loading="lazy"></a>
+      <a href="topographische-experimente-22.png"><img src="topographische-experimente-22.png" alt="Regelmäßiger Sechseckrahmen mit r = 2: D = 8 = 2 hoch 3." width="719" height="708" loading="lazy"></a>
+      <a href="topographische-experimente-23.png"><img src="topographische-experimente-23.png" alt="Regelmäßiger Sechseckrahmen mit r = 3: D = 27 = 3 hoch 3." width="770" height="744" loading="lazy"></a>
+      <a href="topographische-experimente-24.png" class="wide"><img src="topographische-experimente-24.png" alt="Zwei weitere Sechseckrahmen: verschoben mit r = 2 und geschert mit h = r = 2; beide liefern D = 8." width="1508" height="900" loading="lazy"></a>
+      <a href="topographische-experimente-25.png"><img src="topographische-experimente-25.png" alt="Schmaler Sechseckrahmen mit h = 1 und r = 2: D = 4." width="576" height="604" loading="lazy"></a>
+      <a href="topographische-experimente-26.png"><img src="topographische-experimente-26.png" alt="Breiter Sechseckrahmen mit h = 3 und r = 2: D = 12." width="622" height="518" loading="lazy"></a>
+      <a href="topographische-experimente-27.png"><img src="topographische-experimente-27.png" alt="Gescherter Sechseckrahmen mit h = 2 und r = 3: D = 18." width="595" height="611" loading="lazy"></a>
+      <a href="topographische-experimente-28.png"><img src="topographische-experimente-28.png" alt="Regelmäßiger Sechseckrahmen mit r = 4: D = 64 = 4 hoch 3." width="680" height="629" loading="lazy"></a>
+    </div>
+  </details>
+</article>
 <figure style="margin: 2em auto; text-align: center;">
   <img src="gauss-siegel.png" alt="Gaußsiegel mit der Umschrift Pauca sed Matura" width="240" style="max-width: 100%; height: auto;">
   <figcaption><i>Pauca sed Matura</i></figcaption>
