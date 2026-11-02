@@ -29,7 +29,21 @@ article > p.article-date, article > p.article-back { text-align: center; }
 <tr style="border-top:1px solid;"><td style="text-align:right; padding:.25em .3em 0;">2S<sub>n</sub></td><td>=</td><td style="text-align:center; padding:.25em .3em 0;">(n+1)</td><td>+</td><td style="text-align:center; padding:.25em .3em 0;">(n+1)</td><td>+</td><td style="text-align:center; padding:.25em .3em 0;">⋯</td><td>+</td><td style="text-align:center; padding:.25em .3em 0;">(n+1)</td><td>+</td><td style="text-align:center; padding:.25em .3em 0;">(n+1)</td></tr>
 </table>
 </div>
-<p>Das ist jetzt eher ein didaktisches Beispiel. Aber ich denke, man kann die „Idee“ des Beweises in Lean nicht mehr einfangen. Beziehungsweise allgemeiner gefragt: Welche Einschränkungen bringt die Darstellungsweise als Lean-Code mit sich? (Siehe dazu auch <a href="oberflaeche-der-mathematik.pdf#page=21">Abschnitt 6.2 „Simultanität und Ikonizität“ meiner Arbeit <em>Die Oberfläche der Mathematik</em></a> zu linearen und zweidimensionalen Darstellungen.)</p>
+<p>Das ist jetzt eher ein didaktisches Beispiel. Aber ich denke, man kann die „Idee“ des Beweises in Lean nicht mehr einfangen. Beziehungsweise allgemeiner gefragt: Welche Einschränkungen bringt die Darstellungsweise als Lean-Code mit sich? (Siehe dazu auch <a href="oberflaeche-der-mathematik.pdf#page=21">Abschnitt 6.2 „Simultanität und Ikonizität“ meiner Arbeit <em>Die Oberfläche der Mathematik</em></a> zu linearen und zweidimensionalen Darstellungen.)</p><figure style="margin:2em auto; max-width:100%;">
+  <pre style="margin:0; padding:1.1em 1.2em; overflow-x:auto; text-align:left; background:#20242a; color:#f1f3f5; border-radius:4px; font:0.9em/1.55 Consolas, 'Courier New', monospace;"><code>import Mathlib.Data.Rat.Init
+import Mathlib.Logic.Encodable.Basic
+
+namespace Rat
+
+instance : Encodable ℚ :=
+  Encodable.ofEquiv (Σ n : ℤ, { d : ℕ // 0 &lt; d ∧ n.natAbs.Coprime d })
+    ⟨fun ⟨a, b, c, d⟩ =&gt; ⟨a, b, Nat.pos_of_ne_zero c, d⟩,
+      fun ⟨a, b, c, d⟩ =&gt; ⟨a, b, Nat.pos_iff_ne_zero.mp c, d⟩,
+      fun _ =&gt; rfl, fun ⟨_, _, _, _⟩ =&gt; rfl⟩
+
+end Rat</code></pre>
+  <figcaption style="margin-top:.7em; font-size:.9em; text-align:center;">Lean-Code aus Mathlib: Die vollständige Instanzdeklaration kodiert ℚ und nutzt dafür Definitionen und Beweise aus der Bibliothek. Daraus folgt die Abzählbarkeit. Diese Kodierung ist nicht das unten dargestellte Diagonalverfahren. <a href="https://github.com/leanprover-community/mathlib4/blob/master/Mathlib/Data/Rat/Encodable.lean">Quelle: Mathlib, Johannes Hölzl und Mario Carneiro</a> · <a href="https://github.com/leanprover-community/mathlib4/blob/master/LICENSE">Apache-2.0-Lizenz</a></figcaption>
+</figure>
 <p>Bessere Beispiele sind vielleicht Cantors Argumente, unter anderem das Argument dafür, warum ℚ abzählbar ist. Wenn man das linearisiert und als Code darstellt, geht der „Geschmack“ des Ursprungsbeweises verloren – oder zumindest die Entstehung des Beweisgedankens.</p>
 <figure style="margin:2em auto; text-align:center;">
   <img src="cantor-abzaehlbarkeit.png" alt="Diagramm zur diagonalen Aufzählung positiver rationaler Zahlen" width="600" style="max-width:100%; height:auto;">
