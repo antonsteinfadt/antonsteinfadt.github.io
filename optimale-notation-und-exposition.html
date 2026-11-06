@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Optimale Notation und Exposition – Anton Steinfadt</title>
+<title>Vierte Phase mathematischer Notation – Anton Steinfadt</title>
 <link rel="stylesheet" href="style.css?v=20261025b">
 </head>
 <body>
@@ -16,20 +16,27 @@
 </nav>
 <style>
 article > p, article blockquote p, article li { text-align: justify; hyphens: auto; }
-article > p.article-date, article > p.article-back { text-align: center; }
+article > p.article-date, article > p.article-back, article > p.formula { text-align: center; }
+.sources { padding-inline-start: 1.8em; }
+.sources li { text-align: left; margin-block: .65em; }
 </style>
 <article>
-<h1>Optimale Notation und Exposition</h1>
+<h1>Vierte Phase mathematischer Notation</h1>
 <p class="article-date"><time datetime="2026-11-03">3. November 2026</time></p>
-<p>In der Geschichte der mathematischen Notation unterscheidet man üblicherweise drei Phasen: rhetorisch, synkopiert, symbolisch (siehe <a href="oberflaeche-der-mathematik.pdf#page=4"><em>Oberfläche der Mathematik</em></a>). Treten wir nun in eine vierte Phase ein? Problemstellung, Definitionen usw. können heute in alltagssprachlicher Gestalt formuliert und durch KI in symbolische Repräsentationen überführt werden. Ist das eine Rückkehr zu einer rhetorischeren Phase der Mathematik? Nicht ganz: Es handelt sich um eine Art <em>symbolisch-natürlichsprachliche Arbeitsteilung</em>.</p>
-<p>Dies berührt die allgemeinere Frage: <strong>Was ist das ideale mathematische Darstellungsformat?</strong></p>
-<h2>Definitionen</h2>
-<p>In einzelne Definitionen sollte man „hineinzoomen“ können bis hin zu den Atomen (ZFC). Ggf. historische Entwicklung und „motivated reasoning“, warum genau diese Definition sinnvoll ist gegenüber einer anderen.</p>
-<h2>Mathematische Sätze</h2>
-<p>Mathematische Sätze sind oft mit bestimmten Voraussetzungen gespickt („offen“, „linksstetig“, usw.). Es wäre sinnvoll, wenn man die Notwendigkeit und Beweisrolle jeder dieser Voraussetzungen „aufklappen“ könnte (Pop-up-Fenster). Z. B. sollte für jede Voraussetzung im Satz automatisch ein Beispiel angegeben werden, was passiert, wenn man sie wegließe. Man könnte auch jeweils drei Versionen des Satzinhalts angeben: grobe Intuition, knappe Formulierung und formale Darstellung. Möglicherweise eine Visualisierung des Satzes.</p>
-<h2>Beweise</h2>
-<p>Jeder Schritt im Beweis sollte die Information enthalten, ob es sich um eine Voraussetzung handelt, oder woraus ein Zwischenergebnis gefolgert wurde. Es sollte im Beweis klar werden, wo die Bestandteile des Satzes („offen“, „linksstetig“, usw.) eingehen. Wie beim Satz könnte man auch zwischen Darstellungsmodi unterscheiden: i) grobe Beweisstrategie und ii) Schritt-für-Schritt-Darstellung.</p>
-<p>Weitere Überlegungen folgen.</p>
+<p>Die Entwicklung mathematischer Notation wird üblicherweise in drei Phasen unterteilt: rhetorisch, synkopiert, symbolisch.<sup><a id="fnref1" href="#fn1" aria-label="Fußnote 1">[1]</a></sup> <em>Rhetorisch</em> heißt: man schreibt die Rechnungen und Relationen in Worten (sogar in Versform) aus. Diese Phase zeigt sich in altägyptischen Papyri und reicht als „rhetorische Algebra“ bis in die islamische Tradition hinein. Al-Chwarizmi beschreibt die Lösung der Gleichung <var>x</var><sup>2</sup> + 21 = 10<var>x</var> etwa wie folgt:<sup><a id="fnref2" href="#fn2" aria-label="Fußnote 2">[2]</a></sup></p>
+<blockquote><p>„Halbiere die Anzahl der Wurzeln. Das ergibt 5. Multipliziere dies mit sich selbst, und das Produkt ist 25. Subtrahiere hiervon die 21, die zum quadratischen Term hinzuaddiert sind, und der Rest ist 4. Ziehe hieraus die Quadratwurzel, 2, und subtrahiere dies von der halben Anzahl der Wurzeln, 5. Es bleiben 3. Das ist die Lösung, die Du gesucht hast und deren Quadrat ist 9. Alternativ kannst Du auch die Quadratwurzel zur halben Anzahl der Wurzeln addieren, und die Summe ist 7. Das ist dann die Lösung, die Du gesucht hast, und das Quadrat ist 49.“</p></blockquote>
+<p>Die zweite Phase wird als „synkopierte Phase“ bezeichnet. <em>Synkopiert</em> meint: Wörter und Zeichen greifen ineinander. Man zieht wiederkehrende Ausdrücke zu Kürzeln zusammen. Diese Form findet sich klassisch bei Diophantos (in der <em>Arithmetika</em>), der Unbekannte und Potenzen mit festen Zeichen/Kürzeln notiert, und später auch in der cossistischen Algebra des Spätmittelalters.<sup><a id="fnref3" href="#fn3" aria-label="Fußnote 3">[3]</a></sup> Auch Cardano arbeitet noch in diesem Paradigma. Er notiert die Lösung von <var>x</var><sup>3</sup> + 6<var>x</var> = 20 mit abkürzenden Zeichen wie ‚<i>cu. R.</i>‘ für ‚∛‘ oder ‚<i>m</i>‘ für ‚meno‘ (Minus):<sup><a id="fnref4" href="#fn4" aria-label="Fußnote 4">[4]</a></sup></p>
+<p class="formula">R. v. cu. R. 108 p̄. 10 | m̄ R. v. cu. R. 108 m̄ 10</p>
+<p>Die dritte – und gegenwärtige Phase – ist die <em>symbolische</em> Phase. Die Zeichen werden hier zur selbstständigen Formelsprache; mit eigener Syntax und Umformungsregeln, in der man direkt mit den Zeichen selbst operiert. Für zahlreiche Beispiele schlage man ein beliebiges zeitgenössisches Mathematiklehrbuch auf.</p>
+<p>Große Sprachmodelle sowie der Einsatz „künstlicher Intelligenz“ werden dieser Entwicklung wohl eine weitere Dimension hinzufügen. Die verbreitete Nutzung großer Sprachmodelle verschiebt die Benutzerinteraktion mit der Mathematik partiell zurück in eine rhetorische Form: Problemstellungen, Definitionen oder Beweisideen können in weitgehend alltagssprachlicher Gestalt formuliert und durch KI in symbolische bzw. berechenbare Repräsentationen überführt werden (u. a. via Anbindung an Computer-Algebra- bzw. Wissenssysteme). Zugleich verstärkt KI im Forschungs- und Verifikationskontext die symbolisch-formale Tendenz, indem „Autoformalisierung“ informale mathematische Darstellungen in Beweisassistenten-Sprachen wie <em>Lean</em> übersetzt, um maschinell prüfbare Beweise zu ermöglichen. In diesem Sinn handelt es sich weniger um eine Rückkehr der Mathematik in eine rhetorische Phase als um eine <em>funktionale Arbeitsteilung zwischen rhetorischer Eingabe und formal-syntaktischem Verifikationskern</em>.</p>
+<hr>
+<h2>Quellen</h2>
+<ol class="sources">
+  <li id="fn1">Eine sehr frühe Quelle für diese heute noch übliche Dreiteilung findet sich bei Georg Heinrich Ferdinand Nesselmann (1842). <cite>Versuch einer kritischen Geschichte der Algebra. Erster Theil: Die Algebra der Griechen.</cite> Berlin: G. Reimer, S. 301 ff. <a href="https://doi.org/10.3931/e-rara-59727">Digitalisat der ETH-Bibliothek Zürich</a>. <a href="#fnref1" aria-label="Zurück zu Fußnote 1 im Text">↩</a></li>
+  <li id="fn2">J. Lennart Berggren (2011). <cite>Mathematik im mittelalterlichen Islam.</cite> Aus dem Englischen von Petra G. Schmidl in Zusammenarbeit mit Heinz Klaus Strick. Berlin und Heidelberg: Springer, S. 114. <a href="https://doi.org/10.1007/978-3-540-76688-9">Verlagsausgabe</a>. <a href="#fnref2" aria-label="Zurück zu Fußnote 2 im Text">↩</a></li>
+  <li id="fn3">Vgl. Dirk Schlimm (2025). <cite>Mathematical Notations.</cite> Elements in the Philosophy of Mathematics. Cambridge: Cambridge University Press, S. 69–71. <a href="https://doi.org/10.1017/9781009472128">Verlagsausgabe</a>. <a href="#fnref3" aria-label="Zurück zu Fußnote 3 im Text">↩</a></li>
+  <li id="fn4">Florian Cajori (1896). <cite>A History of Elementary Mathematics, with Hints on Methods of Teaching.</cite> New York: The Macmillan Company, S. 228. <a href="https://archive.org/details/cu31924001560451/page/228/mode/1up">Digitalisat, S. 228</a>. <a href="#fnref4" aria-label="Zurück zu Fußnote 4 im Text">↩</a></li>
+</ol>
 <p class="article-back"><a href="notizen.html">← Zurück zu Collectanea</a></p>
 </article>
 <footer><p class="footer"><a href="impressum.html">Kontakt und Datenschutzhinweise</a></p></footer>
