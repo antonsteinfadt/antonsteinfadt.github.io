@@ -4,7 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Anton Steinfadt – Homepage</title>
-<link rel="stylesheet" href="style.css?v=20261025g">
+<link rel="stylesheet" href="style.css?v=20261025g"><style>
+  .ueber-mich { display: grid; grid-template-columns: minmax(0, 1fr) 220px; column-gap: 1.5rem; margin: 2rem auto; }
+  .ueber-mich h2 { grid-column: 1; margin: 0 0 1rem; }
+  .ueber-mich p { grid-column: 1; grid-row: 2; margin: 0; text-align: justify; hyphens: auto; }
+  .ueber-mich img { grid-column: 2; grid-row: 2; display: block; width: 100%; height: auto; }
+  @media (max-width: 540px) {
+    .ueber-mich { grid-template-columns: minmax(0, 1fr); }
+    .ueber-mich img { grid-column: 1; grid-row: 3; width: min(220px, 100%); justify-self: center; margin-top: 1.5rem; }
+  }
+</style>
 </head>
 <body>
 <div class="topline">antonsteinfadt.github.io &nbsp; /home/anton/ &nbsp; <span class="odd">*</span></div>
@@ -17,12 +26,11 @@
   <a href="philosophie.html">Philosophie</a>
   <a href="videos.html">Videos</a>
   <a href="notizen.html">Collectanea</a>
-</nav><hr>
-<section aria-labelledby="ueber-mich" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 1.5rem; margin: 2rem auto;">
-  <div style="flex: 1 1 240px; align-self: flex-start;">
+</nav><hr><section class="ueber-mich" aria-labelledby="ueber-mich">
+  
     <h2 id="ueber-mich" style="margin-top: 0;">Über mich</h2>
     <p style="text-align: justify; hyphens: auto;">Ich studiere Mathematik (M.Sc.) und Philosophie (BA) und möchte bald promovieren. Im Moment beschäftigt mich vor allem die Zukunft der Mathematik und ihrer Praxis.</p>
-  </div>
+  
   <img src="anton-mathematik.png" alt="Anton Steinfadt schreibt mathematische Formeln auf eine Glastafel" width="220" style="display: block; width: min(220px, 100%); height: auto;"></section>
 <hr>
 
