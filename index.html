@@ -28,7 +28,6 @@
 </style>
 </head>
 <body>
-<div class="updated">persönliche Homepage<br><time id="today" datetime="2026-10-25">25.10.2026</time></div>
 <h1>Anton Steinfadt</h1>
 <div>Notizen zu Mathematik, Philosophie und weiteren Interessen.</div>
 <nav aria-label="Navigation">
@@ -41,7 +40,7 @@
   
     <h2 id="ueber-mich" style="margin-top: 0;">Über mich</h2>
     <div class="vorstellung">
-  <p>Ich studiere Mathematik (M.Sc.) und Philosophie (BA) und möchte bald promovieren. Im Moment beschäftigt mich vor allem die Zukunft der Mathematik. Insbesondere, wie sich mathematische Tätigkeitsfelder wandeln und welche neuen Projekte in „<a href="https://terrytao.wordpress.com/2026/10/10/math-2-0/">Math 2.0</a>“ entstehen können.</p>
+  <p>Ich studiere Mathematik (M.Sc.) und Philosophie (B.A.) und möchte bald promovieren. Im Moment beschäftigt mich vor allem die Zukunft der Mathematik, insbesondere die Frage, wie sich mathematische Tätigkeitsfelder wandeln und welche neuen Projekte im Rahmen von „<a href="https://terrytao.wordpress.com/2026/10/10/math-2-0/">Math 2.0</a>“ entstehen können.</p>
   <p>Interessen:</p>
   <ul>
     <li>Mathematik: Stochastik, Analysis</li>
@@ -76,17 +75,5 @@
 <footer>
 <hr>
 <p class="footer"><a href="impressum.html">Kontakt und Datenschutz</a></p>
-</footer>
-<script>
-const today = new Date();
-const dateText = new Intl.DateTimeFormat('de-DE', {
-  day: '2-digit', month: '2-digit', year: 'numeric', timeZone: 'Europe/Berlin'
-}).format(today);
-const dateIso = new Intl.DateTimeFormat('en-CA', {
-  year: 'numeric', month: '2-digit', day: '2-digit', timeZone: 'Europe/Berlin'
-}).format(today);
-document.getElementById('today').textContent = dateText;
-document.getElementById('today').dateTime = dateIso;
-</script>
-</body>
+</footer></body>
 </html>
