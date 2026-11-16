@@ -11,6 +11,8 @@
   .ueber-mich .vorstellung p { margin: 0 0 1em; }
   .ueber-mich .vorstellung ul { text-align: left; padding-left: 1.25em; margin: 0; }
   .ueber-mich .vorstellung li { text-align: left; }
+  .lesekreis-inhalt { grid-column: 1; grid-row: 2; }
+  .lesekreis-inhalt > p:first-child { margin-top: 0; }
   .ueber-mich img { grid-column: 2; grid-row: 2; align-self: start; display: block; width: 100%; height: auto; }
   @media (max-width: 540px) {
     .ueber-mich { grid-template-columns: minmax(0, 1fr); }
@@ -42,9 +44,9 @@
 </div>
   
   <img src="anton-mathematik.png" alt="Anton Steinfadt schreibt mathematische Formeln auf eine Glastafel" width="220" style="display: block; width: min(220px, 100%); height: auto;"></section>
-<hr>
-
-<h2>Lesekreise</h2>
+<hr><section class="ueber-mich" aria-labelledby="lesekreise">
+<h2 id="lesekreise">Lesekreise</h2>
+<div class="lesekreis-inhalt">
 <p>Ich organisiere Lesekreise via Discord. <a href="https://discord.gg/DJbJeEavHW">Zum Discord-Server</a>.</p><h3>Aktueller Lesekreis</h3>
 <ul>
   <li><strong>Visual Complex Analysis</strong> (06.11.2026–?)<br><u>Literatur</u>: Tristan Needham, <a href="https://global.oup.com/academic/product/visual-complex-analysis-9780192868923"><em>Visual Complex Analysis</em></a><br><a href="https://www.youtube.com/watch?v=qOezgvqhGRo">Ankündigungsvideo</a></li>
@@ -56,8 +58,9 @@
 <ul>
   <li><strong>Nichtstandardanalysis</strong> (02.08.–11.10.2026)<br><u>Literatur</u>: Peter Baumann und Thomas Kirski, <a href="https://link.springer.com/book/10.1007/978-3-662-64571-0"><em>Infinitesimalrechnung</em></a><br><a href="https://www.youtube.com/watch?v=EotWvflWqSY">Ankündigungsvideo</a></li>
   <li><strong>Nichteuklidische Geometrie</strong> (21.03.–21.06.2026)<br><u>Literatur</u>: Marvin J. Greenberg, <a href="https://store.macmillanlearning.com/us/product/Euclidean-and-Non-Euclidean-Geometries/p/0716799480"><em>Euclidean and Non-Euclidean Geometries</em></a><br><a href="https://www.youtube.com/watch?v=wuvNo3tHMLk">Ankündigungsvideo</a></li>
-</ul>
-
+</ul></div>
+<img src="visual-complex-analysis.png" alt="Buchcover von Visual Complex Analysis von Tristan Needham" width="220">
+</section>
 <h2>Kontakt</h2>
 <p>Fragen oder Rückmeldungen erreichen mich per E-Mail: <span>anton.steinfadt [at] gmail.com</span></p>
 <p class="small">Bitte ersetze „[at]“ beim Schreiben durch das übliche Zeichen.</p>
