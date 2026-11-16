@@ -11,12 +11,19 @@
   .ueber-mich .vorstellung p { margin: 0 0 1em; }
   .ueber-mich .vorstellung ul { text-align: left; padding-left: 1.25em; margin: 0; }
   .ueber-mich .vorstellung li { text-align: left; }
-  .lesekreis-inhalt { grid-column: 1; grid-row: 2; }
+  .lesekreis-inhalt { grid-column: 1; grid-row: 2; text-align: left; }
+  .lesekreis-inhalt h3, .lesekreis-inhalt li { text-align: left; }
+  .lesekreis-inhalt ul { list-style: none; padding: 0; margin: 0; }
+  .lesekreis-inhalt li { margin: 0 0 1em; }
+  .lesekreis-cover { grid-column: 2; grid-row: 2; align-self: start; text-align: center; }
+  .lesekreis-cover p { margin: 0 0 1rem; }
   .lesekreis-inhalt > p:first-child { margin-top: 0; }
   .ueber-mich img { grid-column: 2; grid-row: 2; align-self: start; display: block; width: 100%; height: auto; }
   @media (max-width: 540px) {
     .ueber-mich { grid-template-columns: minmax(0, 1fr); }
     .ueber-mich img { grid-column: 1; grid-row: 3; width: min(220px, 100%); justify-self: center; margin-top: 1.5rem; }
+    .lesekreis-cover { grid-column: 1; grid-row: 3; width: min(220px, 100%); justify-self: center; margin-top: 1.5rem; }
+    .ueber-mich .lesekreis-cover img { margin-top: 0; }
   }
 </style>
 </head>
@@ -58,8 +65,10 @@
 <ul>
   <li><strong>Nichtstandardanalysis</strong> (02.08.–11.10.2026)<br><u>Literatur</u>: Peter Baumann und Thomas Kirski, <a href="https://link.springer.com/book/10.1007/978-3-662-64571-0"><em>Infinitesimalrechnung</em></a><br><a href="https://www.youtube.com/watch?v=EotWvflWqSY">Ankündigungsvideo</a></li>
   <li><strong>Nichteuklidische Geometrie</strong> (21.03.–21.06.2026)<br><u>Literatur</u>: Marvin J. Greenberg, <a href="https://store.macmillanlearning.com/us/product/Euclidean-and-Non-Euclidean-Geometries/p/0716799480"><em>Euclidean and Non-Euclidean Geometries</em></a><br><a href="https://www.youtube.com/watch?v=wuvNo3tHMLk">Ankündigungsvideo</a></li>
-</ul></div>
-<img src="visual-complex-analysis.png" alt="Buchcover von Visual Complex Analysis von Tristan Needham" width="220">
+</ul></div><div class="lesekreis-cover">
+  <p>Aktuelle Lektüre:</p>
+  <img src="visual-complex-analysis.png" alt="Buchcover von Visual Complex Analysis von Tristan Needham" width="220">
+</div>
 </section>
 <h2>Kontakt</h2>
 <p>Fragen oder Rückmeldungen erreichen mich per E-Mail: <span>anton.steinfadt [at] gmail.com</span></p>
