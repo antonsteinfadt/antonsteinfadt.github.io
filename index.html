@@ -11,19 +11,29 @@
   .ueber-mich .vorstellung p { margin: 0 0 1em; }
   .ueber-mich .vorstellung ul { text-align: left; padding-left: 1.25em; margin: 0; }
   .ueber-mich .vorstellung li { text-align: left; }
-  .lesekreis-inhalt { grid-column: 1; grid-row: 2; text-align: center; }
-  .lesekreis-inhalt h3 { text-align: center; margin: 1.5rem 0 0.75rem; }
-  .lesekreis-inhalt ul { list-style: none; padding: 0; margin: 0; }
-  .lesekreis-inhalt li { text-align: center; margin: 0 0 1.25rem; line-height: 1.5; }
-  .lesekreis-cover { grid-column: 2; grid-row: 2; align-self: start; text-align: center; }
-  .lesekreis-cover p { margin: 0 0 1rem; }
-  .lesekreis-inhalt > p:first-child { margin-top: 0; text-align: center; }
   .ueber-mich img { grid-column: 2; grid-row: 2; align-self: start; display: block; width: 100%; height: auto; }
   @media (max-width: 540px) {
     .ueber-mich { grid-template-columns: minmax(0, 1fr); }
     .ueber-mich img { grid-column: 1; grid-row: 3; width: min(220px, 100%); justify-self: center; margin-top: 1.5rem; }
-    .lesekreis-cover { grid-column: 1; grid-row: 3; width: min(220px, 100%); justify-self: center; margin-top: 1.5rem; }
-    .ueber-mich .lesekreis-cover img { margin-top: 0; }
+  }
+
+  .lesekreise { margin: 2.5rem auto; text-align: center; }
+  .lesekreise h2 { margin: 0 0 .6rem; }
+  .lesekreise .lesekreis-einleitung { margin: 0 0 1.8rem; line-height: 1.5; }
+  .lesekreis-aktuell { display: grid; grid-template-columns: minmax(0, 1fr) 150px; align-items: center; gap: 2rem; padding: 1.75rem 2rem; background: #f7f7f4; border: 1px solid #dfded7; text-align: center; }
+  .lesekreis-aktuell h3, .lesekreis-vergangen h3 { margin: 0 0 1rem; font-size: 1em; letter-spacing: .04em; }
+  .lesekreis-aktuell h4, .lesekreis-vergangen h4 { margin: 0 0 .4rem; font-size: 1.15em; }
+  .lesekreise .zeit { color: #555; font-size: .92em; margin: 0 0 .9rem; }
+  .lesekreise .literatur { line-height: 1.5; margin: 0 0 .8rem; }
+  .lesekreis-aktuell img { display: block; width: 100%; height: auto; box-shadow: 0 3px 10px rgba(0,0,0,.16); }
+  .lesekreis-vergangen { margin-top: 2rem; }
+  .lesekreis-archiv { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+  .lesekreis-archiv article { border-top: 1px solid #d9d7ce; padding: 1.2rem .5rem 0; }
+  .lesekreise a:focus-visible { outline: 2px solid #294c7a; outline-offset: 3px; }
+  @media (max-width: 540px) {
+    .lesekreis-aktuell { grid-template-columns: 1fr; padding: 1.5rem; gap: 1.5rem; }
+    .lesekreis-aktuell .buchcover { width: min(150px, 100%); justify-self: center; }
+    .lesekreis-archiv { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -49,24 +59,36 @@
 </div>
   
   <img src="anton-mathematik.png" alt="Anton Steinfadt schreibt mathematische Formeln auf eine Glastafel" width="220" style="display: block; width: min(220px, 100%); height: auto;"></section>
-<hr><section class="ueber-mich" aria-labelledby="lesekreise">
-<h2 id="lesekreise">Lesekreise</h2>
-<div class="lesekreis-inhalt">
-<p>Ich organisiere Lesekreise via Discord. <a href="https://discord.gg/DJbJeEavHW">Zum Discord-Server</a>.</p><h3>Aktueller Lesekreis</h3>
-<ul>
-  <li><strong>Visual Complex Analysis</strong> (06.11.2026–?)<br><u>Literatur</u>: Tristan Needham, <a href="https://global.oup.com/academic/product/visual-complex-analysis-9780192868923"><em>Visual Complex Analysis</em></a><br><a href="https://www.youtube.com/watch?v=qOezgvqhGRo">Ankündigungsvideo</a></li>
-</ul>
-
-
-
-<h3>Vergangene Lesekreise</h3>
-<ul>
-  <li><strong>Nichtstandardanalysis</strong> (02.08.–11.10.2026)<br><u>Literatur</u>: Peter Baumann und Thomas Kirski, <a href="https://link.springer.com/book/10.1007/978-3-662-64571-0"><em>Infinitesimalrechnung</em></a><br><a href="https://www.youtube.com/watch?v=EotWvflWqSY">Ankündigungsvideo</a></li>
-  <li><strong>Nichteuklidische Geometrie</strong> (21.03.–21.06.2026)<br><u>Literatur</u>: Marvin J. Greenberg, <a href="https://store.macmillanlearning.com/us/product/Euclidean-and-Non-Euclidean-Geometries/p/0716799480"><em>Euclidean and Non-Euclidean Geometries</em></a><br><a href="https://www.youtube.com/watch?v=wuvNo3tHMLk">Ankündigungsvideo</a></li>
-</ul></div><div class="lesekreis-cover">
-  <p>Aktuelle Lektüre:</p>
-  <a href="https://global.oup.com/academic/product/visual-complex-analysis-9780192868923"><img src="visual-complex-analysis.png" alt="Buchcover von Visual Complex Analysis von Tristan Needham" width="220"></a>
-</div>
+<hr><section class="lesekreise" aria-labelledby="lesekreise">
+  <h2 id="lesekreise">Lesekreise</h2>
+  <p class="lesekreis-einleitung">Ich organisiere Lesekreise via Discord. <a href="https://discord.gg/DJbJeEavHW">Zum Discord-Server</a>.</p>
+  <div class="lesekreis-aktuell">
+    <div>
+      <h3>Aktueller Lesekreis</h3>
+      <h4>Visual Complex Analysis</h4>
+      <p class="zeit">06.11.2026–?</p>
+      <p class="literatur">Tristan Needham, <a href="https://global.oup.com/academic/product/visual-complex-analysis-9780192868923"><em>Visual Complex Analysis</em></a></p>
+      <a href="https://www.youtube.com/watch?v=qOezgvqhGRo">Ankündigungsvideo</a>
+    </div>
+    <a class="buchcover" href="https://global.oup.com/academic/product/visual-complex-analysis-9780192868923"><img src="visual-complex-analysis.png" alt="Buchcover von Visual Complex Analysis von Tristan Needham" width="150"></a>
+  </div>
+  <div class="lesekreis-vergangen">
+    <h3>Vergangene Lesekreise</h3>
+    <div class="lesekreis-archiv">
+      <article>
+        <h4>Nichtstandardanalysis</h4>
+        <p class="zeit">02.08.–11.10.2026</p>
+        <p class="literatur">Peter Baumann und Thomas Kirski, <a href="https://link.springer.com/book/10.1007/978-3-662-64571-0"><em>Infinitesimalrechnung</em></a></p>
+        <a href="https://www.youtube.com/watch?v=EotWvflWqSY">Ankündigungsvideo</a>
+      </article>
+      <article>
+        <h4>Nichteuklidische Geometrie</h4>
+        <p class="zeit">21.03.–21.06.2026</p>
+        <p class="literatur">Marvin J. Greenberg, <a href="https://store.macmillanlearning.com/us/product/Euclidean-and-Non-Euclidean-Geometries/p/0716799480"><em>Euclidean and Non-Euclidean Geometries</em></a></p>
+        <a href="https://www.youtube.com/watch?v=wuvNo3tHMLk">Ankündigungsvideo</a>
+      </article>
+    </div>
+  </div>
 </section><hr>
 <h2>Kontakt</h2>
 <p>Fragen oder Rückmeldungen erreichen mich per E-Mail: <span>anton.steinfadt [at] gmail.com</span></p>
