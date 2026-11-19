@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="de">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Collectanea – Anton Steinfadt</title><link rel="stylesheet" href="style.css?v=20261025b"></head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Collectanea – Anton Steinfadt</title><link rel="stylesheet" href="style.css?v=20261025b"><style>
+  .notizen-raster { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 1.5rem; }
+  @media (max-width: 540px) { .notizen-raster { grid-template-columns: 1fr; } }
+</style></head>
 <body>
 <nav aria-label="Navigation">
   <a href="index.html">Startseite</a>
@@ -12,6 +15,7 @@
 <h1>Collectanea</h1>
 <p>Kurze Notizen, Fundstücke und Gedanken, die ich später vielleicht weiter ausarbeite.</p>
 <hr><h2>Notizen</h2>
+<div class="notizen-raster">
 
 <p style="text-align:center; font-size:1em; margin:1.4em 0;"><a href="negative-mathematik.html">Negative Mathematik</a> <span style="display:block; font-size:.85em; margin-top:.35em;"><time datetime="2026-11-17">17. November 2026</time></span></p>
 
@@ -23,6 +27,7 @@
 <p style="text-align:center; font-size:1em; margin:1.4em 0;"><a href="gehen-uns-die-interessanten-resultate-aus.html">Gehen uns die interessanten Resultate aus?</a> <span style="display:block; font-size:.85em; margin-top:.35em;"><time datetime="2026-11-03">3. November 2026</time></span></p>
 <p style="text-align:center; font-size:1em; margin:1.4em 0;"><a href="verhaeltnis-formaler-und-informeller-beweise.html">Verhältnis von formalen zu informellem Beweis</a> <span style="display:block; font-size:.85em; margin-top:.35em;"><time datetime="2026-11-02">2. November 2026</time></span></p>
 <!-- Neue Beiträge hier ergänzen; eine Vorlage steht in README.md. -->
+</div>
 <h2>Weiterlesen</h2>
 <ul>
   <li><a href="mathematik.html">Mathematik</a> – Notizen und Materialien zu mathematischen Fragen.</li>
